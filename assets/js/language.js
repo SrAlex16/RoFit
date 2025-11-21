@@ -18,11 +18,23 @@ document.addEventListener("DOMContentLoaded", function () {
                 console.log("Datos cargados:", data);
                 
                 let elementosActualizados = 0;
+                
+                // Actualizar textos normales con data-key
                 document.querySelectorAll("[data-key]").forEach(el => {
                     const key = el.getAttribute("data-key");
                     if (data[lang] && data[lang][key]) {
                         el.innerHTML = data[lang][key];
                         elementosActualizados++;
+                    }
+                });
+                
+                // **NUEVO**: Actualizar placeholders con data-key-placeholder
+                document.querySelectorAll("[data-key-placeholder]").forEach(el => {
+                    const key = el.getAttribute("data-key-placeholder");
+                    if (data[lang] && data[lang][key]) {
+                        el.placeholder = data[lang][key];
+                        elementosActualizados++;
+                        console.log(`Placeholder actualizado: ${key} = ${data[lang][key]}`);
                     }
                 });
                 

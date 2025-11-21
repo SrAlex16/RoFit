@@ -49,7 +49,7 @@
     "contacto_title": "Ponte en <em>Contacto</em>",
     "contacto_desc": "¿Tienes preguntas? Rellena el formulario y te responderé lo antes posible.",
     "form_nombre": "Nombre*",
-    "form_email": "Email*",
+    "form_email": "Correo*",
     "form_asunto": "Asunto",
     "form_mensaje": "Mensaje",
     "form_enviar": "Enviar mensaje",
