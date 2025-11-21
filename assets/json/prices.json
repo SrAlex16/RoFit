@@ -1,0 +1,42 @@
+{
+  "personal": {
+    "1_sesion": " 20€",
+    "4_sesiones": " 80€",
+    "8_sesiones": " 150€",
+    "12_sesiones": " 220€"
+  },
+  "pareja": {
+    "1_sesion": " 10€",
+    "4_sesiones": " 50€",
+    "8_sesiones": " 100€",
+    "12_sesiones": " 150€"
+  },
+    "gimnasio": {
+    "cuota": " 37€",
+    "bono1": " 6€",
+    "bono10": " 45€"
+  },
+  "gruporeducido": {
+    "1_sesion": " 10€",
+    "4_sesiones": " 35€",
+    "8_sesiones": " 60€",
+    "12_sesiones": " 100€"
+  },
+  "grupogrande": {
+    "1_sesion": " 10€",
+    "4_sesiones": " 25€",
+    "8_sesiones": " 60€",
+    "12_sesiones": " 75€"
+  },
+  "online": {
+    "seg_2": " 40€",
+    "seg_4": " 60€",
+    "1_sesion": " 20€",
+    "4_sesiones": " 80€",
+    "8_sesiones": " 150€",
+    "12_sesiones": " 235€"
+  },
+    "nutricion": {
+        "orientacion": " 20€"
+    }
+}

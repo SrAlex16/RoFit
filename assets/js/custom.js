@@ -58,8 +58,8 @@
 	$(document).ready(function () {
 	    $(document).on("scroll", onScroll);
 	    
-	    //smoothscroll
-	    $('.scroll-to-section a[href^="#"]').on('click', function (e) {
+	    //smoothscroll - EXCLUIR el botón de idioma
+	    $('.scroll-to-section a[href^="#"]:not(#language-btn)').on('click', function (e) {
 	        e.preventDefault();
 	        $(document).off("scroll");
 	        
@@ -85,12 +85,16 @@
 	    $('.nav a').each(function () {
 	        var currLink = $(this);
 	        var refElement = $(currLink.attr("href"));
-	        if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
-	            $('.nav ul li a').removeClass("active");
-	            currLink.addClass("active");
-	        }
-	        else{
-	            currLink.removeClass("active");
+	        
+	        // Verificar que el elemento existe y tiene position
+	        if (refElement.length > 0 && refElement.position()) {
+	            if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+	                $('.nav ul li a').removeClass("active");
+	                currLink.addClass("active");
+	            }
+	            else{
+	                currLink.removeClass("active");
+	            }
 	        }
 	    });
 	}

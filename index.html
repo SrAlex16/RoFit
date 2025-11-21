@@ -50,17 +50,20 @@ https://templatemo.com/tm-548-training-studio
                     <nav class="main-nav">
                         <a href="index.html" class="logo">Ro<em>Fit</em></a>
                         <ul class="nav">
-                            <li class="scroll-to-section"><a href="#language">English</a></li>
-                            <li class="scroll-to-section"><a href="#top" class="active">Inicio</a></li>
-                            <li class="scroll-to-section"><a href="#features">Entrenamientos</a></li>
-                            <li class="scroll-to-section"><a href="#our-classes">Servicios</a></li>
-                            <li class="scroll-to-section"><a href="#nutricion">Nutrición</a></li>
-                            <li class="scroll-to-section"><a href="#contact-us">Contacto</a></li> 
+                            <!-- BOTÓN DE IDIOMA - SIN scroll-to-section -->
+                            <li><a href="#" id="language-btn">English</a></li>
+                            
+                            <!-- Resto del menú - CON scroll-to-section -->
+                            <li class="scroll-to-section"><a href="#top" class="active" data-key="inicio">Inicio</a></li>
+                            <li class="scroll-to-section"><a href="#features" data-key="entrenamientos">Entrenamientos</a></li>
+                            <li class="scroll-to-section"><a href="#our-classes" data-key="servicios">Servicios</a></li>
+                            <li class="scroll-to-section"><a href="#nutricion" data-key="nutricion">Nutrición</a></li>
+                            <li class="scroll-to-section"><a href="#contact-us" data-key="contacto">Contacto</a></li> 
                         </ul>        
                         <a class='menu-trigger'>
                             <span>Menu</span>
                         </a>
-                        </nav>
+                    </nav>
                 </div>
             </div>
         </div>
@@ -75,8 +78,8 @@ https://templatemo.com/tm-548-training-studio
 
         <div class="video-overlay header-text">
             <div class="caption">
-                <h6>Tu potencial, Desatado</h6>
-                <h2>El cambio es <em>Hoy</em></h2>
+                <h6 data-key="banner_subtitle">Tu potencial, Desatado</h6>
+                <h2 data-key="banner_title">El cambio es <em>Hoy</em></h2>
                 <!--
                 <div class="main-button scroll-to-section">
                     <a href="#features">Become a member</a>
@@ -93,9 +96,9 @@ https://templatemo.com/tm-548-training-studio
             <div class="row">
                 <div class="col-lg-6 offset-lg-3">
                     <div class="section-heading">
-                        <h2>Mis <em>Programas</em></h2>
+                        <h2 data-key="programas_title">Mis <em>Programas</em></h2>
                         <img src="assets/images/line-dec.png" alt="waves">
-                        <p>Entrena donde quieras: aire libre, domicilio, gimnasio o en línea. Ofrezco sesiones adaptadas a tu nivel y objetivos, con material incluido (domicilio/exterior), guía en máquinas/técnicas (gimnasio), o planificación flexible y seguimiento personalizado (online). Todas las opciones son combinables para máxima adaptabilidad.</p>
+                        <p data-key="programas_desc">Entrena donde quieras: aire libre, domicilio, gimnasio o en línea. Ofrezco sesiones adaptadas a tu nivel y objetivos, con material incluido (domicilio/exterior), guía en máquinas/técnicas (gimnasio), o planificación flexible y seguimiento personalizado (online). Todas las opciones son combinables para máxima adaptabilidad.</p>
                     </div>
                 </div>
                 <div class="col-lg-6">
@@ -105,14 +108,14 @@ https://templatemo.com/tm-548-training-studio
                                 <img src="assets/images/features-first-icon.png" alt="First One">
                             </div>
                             <div class="right-content">
-                                <h4>Entrenamiento Personal Individual</h4>
-                                <p>Tarifas de entrenamiento:</p>
+                                <h4 data-key="prog_individual">Entrenamiento Personal Individual</h4>
+                                <p data-key="prog_tarifas">Tarifas de entrenamiento:</p>
                                 </br>
                                 <ul>
-                                    <li>1 Sesión (1 hora): 20€</li>
-                                    <li>4 Sesiones: 80€</li>
-                                    <li>8 Sesiones: 150€</li>
-                                    </li> 12 Sesiones: 220€</li>
+                                    <li data-key="sesion">1 sesión:<span id="personal-1_sesion"></span></li>
+                                    <li data-key="4_sesiones">4 sesiones:<span id="personal-4_sesion"></span></li>
+                                    <li data-key="8_sesiones">8 sesiones:<span id="personal-8_sesion"></span></li>
+                                    <li data-key="12_sesiones">12 sesiones:<span id="personal-12_sesion"></span></li>
                                 </ul>
                                 <!-- <a href="#" class="text-button">Discover More</a> -->
                             </div>
@@ -122,14 +125,14 @@ https://templatemo.com/tm-548-training-studio
                                 <img src="assets/images/features-first-icon.png" alt="second one">
                             </div>
                             <div class="right-content">
-                                <h4>Entrenamineto en Pareja (precios por persona)</h4>
-                                <p>Tarifas de entrenamiento:</p>
+                                <h4 data-key="prog_pareja">Entrenamineto en Pareja (precios por persona)</h4>
+                                <p data-key="prog_pareja_tarifa">Tarifas de entrenamiento:</p>
                                 </br>
                                 <ul>
-                                    <li>1 Sesión (1 hora): 10€</li>
-                                    <li>4 Sesiones: 50€</li>
-                                    <li>8 Sesiones: 100€</li>
-                                    </li> 12 Sesiones: 150€</li>
+                                    <li data-key="sesion">1 sesión:<span id="pareja-1_sesion"></span></li>
+                                    <li data-key="4_sesiones">4 sesiones:<span id="pareja-4_sesiones"></span></li>
+                                    <li data-key="8_sesiones">8 sesiones:<span id="pareja-8_sesiones"></span></li>
+                                    <li data-key="12_sesiones">12 sesiones:<span id="pareja-12_sesiones"></span></li>
                                 </ul>
                                 <!-- <a href="#" class="text-button">Discover More</a> -->
                             </div>
@@ -139,15 +142,15 @@ https://templatemo.com/tm-548-training-studio
                                 <img src="assets/images/features-first-icon.png" alt="gym training">
                             </div>
                             <div class="right-content">
-                                <h4>Entrenamientos en Gimnasio (📍Gimnasio Atlas)</h4>
-                                <p>Se mantienen las mismas tarifas de entrenamiento más:</p>
+                                <h4 data-key="prog_gimnasio">Entrenamientos en Gimnasio (📍Gimnasio Atlas)</h4>
+                                <p data-key="prog_gimnasio_extra">Se mantienen las mismas tarifas de entrenamiento más:</p>
                                 </br>
                                 <ul>
-                                    <li>Cuota mensual del centro aparte: 37€</li>
-                                    <li>Bono de un día de lluvia: 6€</li>
-                                    <li>Bono de 10 días de lluvia: 45€</li>
+                                    <li data-key="cuota_centro">Cuota mensual del centro aparte:<span id="gimnasio-cuota"></span></li>
+                                    <li data-key="cuota_centro_1">Bono de un día de lluvia:<span id="gimnasio-bono1"></span></li>
+                                    <li data-key="cuota_centro_10">Bono de 10 días de lluvia:<span id="gimnasio-bono10"></span></li>
                                 </ul>
-                                <a href="#" class="text-button">Discover More</a>
+                                <!-- <a href="#" class="text-button">Discover More</a> -->
                             </div>
                         </li>
                     </ul>
@@ -159,14 +162,14 @@ https://templatemo.com/tm-548-training-studio
                                 <img src="assets/images/features-first-icon.png" alt="third gym training">
                             </div>
                             <div class="right-content">
-                                <h4>Grupos Reducidos (máx. 5 personas)</h4>
-                                <p>Tarifas de entrenamiento:</p>
+                                <h4 data-key="prog_grupo_reducido">Grupos Reducidos (máx. 5 personas)</h4>
+                                <p data-key="prog_tarifas">Tarifas de entrenamiento:</p>
                                 </br>
                                 <ul>
-                                    <li>1 Sesión (1 hora): 10€</li>
-                                    <li>4 Sesiones: 35€</li>
-                                    <li>8 Sesiones: 60€</li>
-                                    </li> 12 Sesiones: 100€</li>
+                                    <li data-key="sesion_hora">1 Sesión (1 hora): <span id="gruporeducido-1_sesion"></span></li>
+                                    <li data-key="4_sesiones">4 Sesiones: <span id="gruporeducido-4_sesiones"></span></li>
+                                    <li data-key="8_sesiones">8 Sesiones: <span id="gruporeducido-8_sesiones"></span></li>
+                                    </li data-key="12_sesiones"> 12 Sesiones: <span id="gruporeducido-12_sesiones"></span></li>
                                 </ul>
                                 <!-- <a href="#" class="text-button">Discover More</a> -->
                             </div>
@@ -176,14 +179,14 @@ https://templatemo.com/tm-548-training-studio
                                 <img src="assets/images/features-first-icon.png" alt="third gym training">
                             </div>
                             <div class="right-content">
-                                <h4>Grupos Grandes (mín. 6 personas)</h4>
-                                <p>Tarifas de entrenamiento:</p>
+                                <h4 data-key="prog_grupo_grande">Grupos Grandes (mín. 6 personas)</h4>
+                                <p data-key="prog_tarifas">Tarifas de entrenamiento:</p>
                                 </br>
                                 <ul>
-                                    <li>1 Sesión (1 hora): 10€</li>
-                                    <li>4 Sesiones: 25€</li>
-                                    <li>8 Sesiones: 60€</li>
-                                    </li> 12 Sesiones: 75€</li>
+                                    <li data-key="sesion_hora">1 Sesión (1 hora):<span id="grupogrande-1_sesion"></span></li>
+                                    <li data-key="4_sesiones">4 Sesiones:<span id="grupogrande-4_sesiones"></span></li>
+                                    <li data-key="8_sesiones">8 Sesiones:<span id="grupogrande-8_sesiones"></span></li>
+                                    </li data-key="12_sesiones"> 12 Sesiones:<span id="grupogrande-12_sesiones"></span></li>
                                 </ul>
                                 <!-- <a href="#" class="text-button">Discover More</a> -->
                             </div>
@@ -193,24 +196,24 @@ https://templatemo.com/tm-548-training-studio
                                 <img src="assets/images/features-first-icon.png" alt="gym training">
                             </div>
                             <div class="right-content">
-                                <h4>Entrenamiento Personal Online</h4>
-                                <p>Tarifas de entrenamiento:</p>
+                                <h4 data-key="prog_online">Entrenamiento Personal Online</h4>
+                                <p data-key="prog_tarifas">Tarifas de entrenamiento:</p>
                                 </br>
                                 <ul>
-                                    <li>Seguimiento online mensual:</li>
+                                    <li data-key="prog_online_seg">Seguimiento online mensual:</li>
                                     <ul>
-                                        <li>2 Sesiones semanales: 40€</li>
-                                        <li>3 Sesiones semanales: 60€</li>
+                                        <li data-key="2_sesiones_sem">2 Sesiones semanales:<span id="online-seg_2"></span></li>
+                                        <li data-key="4_sesiones_sem">3 Sesiones semanales:<span id="online-seg_4"></span></li>
                                     </ul>
                                 </ul>
                                 <ul>
-                                    <li>Seguimiento online mensual + clases en directo:</li>
+                                    <li data-key="prog_online_clases">Seguimiento online mensual + clases en directo:</li>
                                     <ul>
-                                        <li>1 Sesión (1 hora): 20€</li>
-                                        <li>4 Sesiones: 80€</li>
-                                        <li>8 Sesiones: 150€</li>
-                                        </li> 12 Sesiones: 235€</li>
-                                        </li> Extra: : Clases de fitness, actividades dirigidas, preparación específica para
+                                        <li data-key="sesion_hora">1 Sesión (1 hora):<span id="online-1_sesion"></span></li>
+                                        <li data-key="4_sesiones">4 Sesiones:<span id="online-4_sesiones"></span></li>
+                                        <li data-key="8_sesiones">8 Sesiones:<span id="online-8_sesiones"></span></li>
+                                        </li data-key="12_sesiones"> 12 Sesiones:<span id="online-12_sesiones"></span></li>
+                                        </li data-key="extra"> Extra: : Clases de fitness, actividades dirigidas, preparación específica para
                                         algún deporte o pruebas físicas y rehabilitación (consultar precio sin compromiso)</li>
                                     </ul>
                                 </ul>
@@ -230,8 +233,8 @@ https://templatemo.com/tm-548-training-studio
             <div class="row">
                 <div class="col-lg-10 offset-lg-1">
                     <div class="cta-content">
-                        <h2>entrena <em>vive</em>, siente el <em>cambio</em>!</h2>
-                        <p>No importa tu nivel ni punto de partida. En ROFIT, te guío en cada paso para que consigas el cuerpo y la energía que deseas con un entrenamiento personalizado y flexible, diseñado para tu ritmo y tus metas.</p>
+                        <h2 data-key="cta_title">entrena <em>vive</em>, siente el <em>cambio</em>!</h2>
+                        <p data-key="cta_desc">No importa tu nivel ni punto de partida. En ROFIT, te guío en cada paso para que consigas el cuerpo y la energía que deseas con un entrenamiento personalizado y flexible, diseñado para tu ritmo y tus metas.</p>
                         <!--
                         <div class="main-button scroll-to-section">
                             <a href="#our-classes">Become a member</a>
@@ -250,19 +253,19 @@ https://templatemo.com/tm-548-training-studio
             <div class="row">
                 <div class="col-lg-6 offset-lg-3">
                     <div class="section-heading">
-                        <h2><em>Servicios</em></h2>
+                        <h2 data-key="servicios"><em>Servicios</em></h2>
                         <img src="assets/images/line-dec.png" alt="">
-                        <p>Variedad de clases y actividades adaptadas a tus objetivos.</p>
+                        <p data-key="servicios_desc">Variedad de clases y actividades adaptadas a tus objetivos.</p>
                     </div>
                 </div>
             </div>
             <div class="row" id="tabs">
               <div class="col-lg-4">
                 <ul>
-                  <li><a href='#tabs-1'><img src="assets/images/tabs-first-icon.png" alt="">Entrenamiento online y presencial</a></li>
-                  <li><a href='#tabs-2'><img src="assets/images/tabs-first-icon.png" alt="">Entrenamiento al aire libre y gimnasio</a></a></li>
-                  <li><a href='#tabs-3'><img src="assets/images/tabs-first-icon.png" alt="">Entrenamiento de fuerza + clases dirigidas fitness de cualquier modalidad</a></a></li>
-                  <li><a href='#tabs-4'><img src="assets/images/tabs-first-icon.png" alt="">Combinación de varios estilos y modalidades de entrenamiento a su preferencia</a></a></li>
+                  <li data-key="servicios_1"><a href='#tabs-1'><img src="assets/images/tabs-first-icon.png" alt="">Entrenamiento online y presencial</a></li>
+                  <li data-key="servicios_2"><a href='#tabs-2'><img src="assets/images/tabs-first-icon.png" alt="">Entrenamiento al aire libre y gimnasio</a></a></li>
+                  <li data-key="servicios_3"><a href='#tabs-3'><img src="assets/images/tabs-first-icon.png" alt="">Entrenamiento de fuerza + clases dirigidas fitness de cualquier modalidad</a></a></li>
+                  <li data-key="servicios_4"><a href='#tabs-4'><img src="assets/images/tabs-first-icon.png" alt="">Combinación de varios estilos y modalidades de entrenamiento a su preferencia</a></a></li>
                   <!-- <div class="main-rounded-button"><a href="#">View All Schedules</a></div> -->
                 </ul>
               </div>
@@ -270,8 +273,8 @@ https://templatemo.com/tm-548-training-studio
                 <section class='tabs-content'>
                   <article id='tabs-1'>
                     <img src="assets/images/training-image-01.jpg" alt="First Class">
-                    <h4>Entrenamiento online y presencial</h4>
-                    <p>Entrenamiento de fuerza + clases dirigidas de fitness: Esta opción combina tus sesiones de fuerza personalizadas con clases dirigidas de cualquier modalidad que te apetezca, como Pilates, Yoga, Zumba, Bodypump o bodybalance y muchas más.  No solo trabajamos la fuerza, sino también movilidad, flexibilidad, resistencia, coordinación y equilibrio para que tu cuerpo se desarrolle de manera equilibrada y completa. Es ideal para quienes quieren un entrenamiento variado y eficaz, que no se quede solo en levantar peso sino que integre todos los aspectos del movimiento y del bienestar físico.</p>
+                    <h4 data-key="servicios_1">Entrenamiento online y presencial</h4>
+                    <p data-key="servicios_1_desc">Entrenamiento de fuerza + clases dirigidas de fitness: Esta opción combina tus sesiones de fuerza personalizadas con clases dirigidas de cualquier modalidad que te apetezca, como Pilates, Yoga, Zumba, Bodypump o bodybalance y muchas más.  No solo trabajamos la fuerza, sino también movilidad, flexibilidad, resistencia, coordinación y equilibrio para que tu cuerpo se desarrolle de manera equilibrada y completa. Es ideal para quienes quieren un entrenamiento variado y eficaz, que no se quede solo en levantar peso sino que integre todos los aspectos del movimiento y del bienestar físico.</p>
                     <!--
                     <div class="main-button">
                         <a href="#">View Schedule</a>
@@ -280,8 +283,8 @@ https://templatemo.com/tm-548-training-studio
                   </article>
                   <article id='tabs-2'>
                     <img src="assets/images/training-image-02.jpg" alt="Second Training">
-                    <h4> Entrenamiento al aire libre y gimnasio</h4>
-                    <p>Combinación de varios estilos y modalidades a tu preferencia: Con esta modalidad puedes crear tu propia rutina mezclando diferentes tipos de entrenamiento y ubicaciones según tus necesidades y preferencias. Por ejemplo, podemos entrenar fuerza en el gimnasio, otro día a la semana o al mes, hacer una clase de pilates u cualquier otra modalidad al aire libre y después completar otra sesión online desde casa, si por ejemplo, no tienes tiempo de desplazarte o estás de viaje o simplemente porque te apetece. También puedes combinar distintas modalidades en el mismo entorno si lo prefieres. Esta opción te permite entrenar de manera completamente personalizada, flexible y variada, adaptando cada sesión a tus objetivos, tu nivel y tus gustos, para que nunca te aburras y siempre saques el máximo provecho de tus entrenamientos.</p>
+                    <h4 data-key="servicios_2"> Entrenamiento al aire libre y gimnasio</h4>
+                    <p data-key="servicios_2_desc">Combinación de varios estilos y modalidades a tu preferencia: Con esta modalidad puedes crear tu propia rutina mezclando diferentes tipos de entrenamiento y ubicaciones según tus necesidades y preferencias. Por ejemplo, podemos entrenar fuerza en el gimnasio, otro día a la semana o al mes, hacer una clase de pilates u cualquier otra modalidad al aire libre y después completar otra sesión online desde casa, si por ejemplo, no tienes tiempo de desplazarte o estás de viaje o simplemente porque te apetece. También puedes combinar distintas modalidades en el mismo entorno si lo prefieres. Esta opción te permite entrenar de manera completamente personalizada, flexible y variada, adaptando cada sesión a tus objetivos, tu nivel y tus gustos, para que nunca te aburras y siempre saques el máximo provecho de tus entrenamientos.</p>
                     <!--
                     <div class="main-button">
                         <a href="#">View Schedule</a>
@@ -290,8 +293,8 @@ https://templatemo.com/tm-548-training-studio
                   </article>
                   <article id='tabs-3'>
                     <img src="assets/images/training-image-03.jpg" alt="Third Class">
-                    <h4> Entrenamiento de fuerza + clases dirigidas fitness de cualquier modalidad</h4>
-                    <p>Esta modalidad te permite combinar sesiones presenciales con entrenamiento online, adaptándose a tu nivel, objetivos y disponibilidad. El entrenamiento online es ideal para quienes no pueden desplazarse, tienen horarios ajustados, están de viaje o simplemente quieren mayor comodidad, mientras que las sesiones presenciales permiten trabajar fuerza, técnica y movilidad con corrección directa.</br>Combinando ambos formatos puedes crear un plan flexible, variado y personalizado, por ejemplo: entrenar fuerza en el gimnasio, hacer una clase al aire libre y complementar con otra sesión online, asegurando entrenamientos efectivos y motivadores sin importar dónde estés.</p>
+                    <h4 data-key="servicios_3"> Entrenamiento de fuerza + clases dirigidas fitness de cualquier modalidad</h4>
+                    <p data-key="servicios_3_desc">Esta modalidad te permite combinar sesiones presenciales con entrenamiento online, adaptándose a tu nivel, objetivos y disponibilidad. El entrenamiento online es ideal para quienes no pueden desplazarse, tienen horarios ajustados, están de viaje o simplemente quieren mayor comodidad, mientras que las sesiones presenciales permiten trabajar fuerza, técnica y movilidad con corrección directa.</br>Combinando ambos formatos puedes crear un plan flexible, variado y personalizado, por ejemplo: entrenar fuerza en el gimnasio, hacer una clase al aire libre y complementar con otra sesión online, asegurando entrenamientos efectivos y motivadores sin importar dónde estés.</p>
                     <!--
                     <div class="main-button">
                         <a href="#">View Schedule</a>
@@ -300,8 +303,8 @@ https://templatemo.com/tm-548-training-studio
                   </article>
                   <article id='tabs-4'>
                     <img src="assets/images/training-image-04.jpg" alt="Fourth Training">
-                    <h4>Combinación de varios estilos y modalidades de entrenamiento a su preferencia</h4>
-                    <p>Con esta modalidad puedes combinar sesiones en espacios abiertos y en gimnasio, adaptando tu entrenamiento a tus objetivos y preferencias. Entrenar al aire libre te permite conectar con la naturaleza, respirar aire fresco y moverte de forma más libre y dinámica, mientras que las sesiones en gimnasio te permiten trabajar fuerza, técnica y movilidad con todo el equipamiento disponible.</br>La combinación de ambos entornos hace tus entrenamientos más variados, completos y motivadores, y te da la flexibilidad de elegir dónde entrenar según el día, tu energía o incluso el clima.</p>
+                    <h4 data-key="servicios_4">Combinación de varios estilos y modalidades de entrenamiento a su preferencia</h4>
+                    <p data-key="servicios_4_desc">Con esta modalidad puedes combinar sesiones en espacios abiertos y en gimnasio, adaptando tu entrenamiento a tus objetivos y preferencias. Entrenar al aire libre te permite conectar con la naturaleza, respirar aire fresco y moverte de forma más libre y dinámica, mientras que las sesiones en gimnasio te permiten trabajar fuerza, técnica y movilidad con todo el equipamiento disponible.</br>La combinación de ambos entornos hace tus entrenamientos más variados, completos y motivadores, y te da la flexibilidad de elegir dónde entrenar según el día, tu energía o incluso el clima.</p>
                     <!--
                     <div class="main-button">
                         <a href="#">View Schedule</a>
@@ -320,9 +323,9 @@ https://templatemo.com/tm-548-training-studio
             <div class="row">
                 <div class="col-lg-6 offset-lg-3">
                     <div class="section-heading dark-bg">
-                        <h2>Servicios <em>Extra</em></h2>
+                        <h2 data-key="servicios_extra_title">Servicios <em>Extra</em></h2>
                         <img src="assets/images/line-dec.png" alt="">
-                        <p>Ofrezco una amplia y variada gama de clases para evitar la monotonía y optimizar tu progreso. El catálogo incluye disciplinas como Zumba, Pilates, Yoga, BodyPump, Spinning, entrenamiento híbrido y Crosstraining. Además, proporciono servicios especializados como preparación física para pruebas/competiciones, entrenamiento para embarazadas y rehabilitación, garantizando que cada actividad se adapte a tus objetivos y necesidades específicas.</p>
+                        <p data-key="servicios_extra_desc">Ofrezco una amplia y variada gama de clases para evitar la monotonía y optimizar tu progreso. El catálogo incluye disciplinas como Zumba, Pilates, Yoga, BodyPump, Spinning, entrenamiento híbrido y Crosstraining. Además, proporciono servicios especializados como preparación física para pruebas/competiciones, entrenamiento para embarazadas y rehabilitación, garantizando que cada actividad se adapte a tus objetivos y necesidades específicas.</p>
                     </br><p style=font-style:italic ></p>
                     </div>
                 </div>
@@ -389,10 +392,10 @@ https://templatemo.com/tm-548-training-studio
             <div class="row">
                 <div class="col-lg-6 offset-lg-3">
                     <div class="section-heading">
-                        <h2>Tu <em>Nutrición</em></h2>
+                        <h2 data-key="nutricion_title">Tu <em>Nutrición</em></h2>
                         <img src="assets/images/line-dec.png" alt="">
-                        <p>Ofrezco orientación y consejos básicos de nutrición para ayudarte a complementar tu entrenamiento, mejorar tus hábitos y alcanzar tus objetivos de forma más efectiva.</p>
-                    </br><p style=font-style:italic >Orientación, guía y Consejos de Nutrición: 20 €</p>
+                        <p data-key="nutricion_desc">Ofrezco orientación y consejos básicos de nutrición para ayudarte a complementar tu entrenamiento, mejorar tus hábitos y alcanzar tus objetivos de forma más efectiva.</p>
+                    </br><p data-key="nutricion_price" font-style:italic >Orientación, guía y Consejos de Nutrición:<span id="nutricion-orientacion"></span></p>
                     </div>
                 </div>
             </div>
@@ -460,49 +463,55 @@ https://templatemo.com/tm-548-training-studio
     
     <!-- ***** Contact Us Area Starts ***** -->
     <section class="section" id="contact-us">
-        <div class="contai">
-            <h2><em>Contacto</em></h2>
-            <div class="row">
-                <div class="col-lg-6 col-md-6 col-xs-12">
-                    <div id="map">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3169.755182880675!2d-5.984209787849215!3d37.39562157196699!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd126ea9a4926a05%3A0x7ad28a9d12af2847!2sGimnasio%20Atlas%20Sevilla%20-%20Polideportivo%20Universitario%20San%20Juan%20Bosco!5e0!3m2!1ses!2ses!4v1763579280484!5m2!1ses!2ses" width="100%" height="600px" frameborder="0" style="border:0" allowfullscreen></iframe>
-                    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 offset-lg-3">
+                <div class="section-heading"> 
+                    <h2 class="contact-us-styled-title" data-key="contacto_title">Ponte en <em>Contacto</em></h2>
+                    <img src="assets/images/line-dec.png" alt="waves">
+                    <p data-key="contacto_desc">¿Tienes preguntas? Rellena el formulario y te responderé lo antes posible.</p>
                 </div>
-                <div class="col-lg-6 col-md-6 col-xs-12">
-                    <div class="contact-form">
-                        <form id="contact" action="" method="post">
-                          <div class="row">
+            </div>
+            <div class="col-lg-6 col-md-6 col-xs-12">
+                <div id="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3169.755182880675!2d-5.984209787849215!3d37.39562157196699!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd126ea9a4926a05%3A0x7ad28a9d12af2847!2sGimnasio%20Atlas%20Sevilla%20-%20Polideportivo%20Universitario%20San%20Juan%20Bosco!5e0!3m2!1ses!2ses!4v1763579280484!5m2!1ses!2ses" width="100%" height="600px" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-xs-12">
+                <div class="contact-form">
+                    <form id="contact" action="" method="post">
+                        <div class="row">
                             <div class="col-md-6 col-sm-12">
-                              <fieldset>
-                                <input name="name" type="text" id="name" placeholder="Nombre*" required="">
-                              </fieldset>
+                                <fieldset>
+                                    <input name="name" type="text" id="name" placeholder="Nombre*" required="">
+                                </fieldset>
                             </div>
                             <div class="col-md-6 col-sm-12">
-                              <fieldset>
-                                <input name="email" type="text" id="email" pattern="[^ @]*@[^ @]*" placeholder="Email*" required="">
-                              </fieldset>
+                                <fieldset>
+                                    <input name="email" type="text" id="email" pattern="[^ @]*@[^ @]*" placeholder="Email*" required="">
+                                </fieldset>
                             </div>
                             <div class="col-md-12 col-sm-12">
-                              <fieldset>
-                                <input name="subject" type="text" id="subject" placeholder="Asunto">
-                              </fieldset>
+                                <fieldset>
+                                    <input name="subject" type="text" id="subject" placeholder="Asunto">
+                                </fieldset>
                             </div>
                             <div class="col-lg-12">
-                              <fieldset>
-                                <textarea name="message" rows="6" id="message" placeholder="Mensaje" required=""></textarea>
-                              </fieldset>
+                                <fieldset>
+                                    <textarea name="message" rows="6" id="message" placeholder="Mensaje" required=""></textarea>
+                                </fieldset>
                             </div>
                             <div class="col-lg-12">
-                              <fieldset>
-                                <button type="submit" id="form-submit" class="main-button">Enviar mensaje</button>
-                              </fieldset>
+                                <fieldset>
+                                    <button type="submit" id="form-submit" class="main-button">Enviar mensaje</button>
+                                </fieldset>
                             </div>
-                          </div>
-                        </form>
-                    </div>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
+    </div>
     </section>
     <!-- ***** Contact Us Area Ends ***** -->
     
@@ -544,6 +553,7 @@ https://templatemo.com/tm-548-training-studio
     
     <!-- Global Init -->
     <script src="assets/js/custom.js"></script>
+    <script src="assets/js/language.js"></script>
 
   </body>
 </html>
