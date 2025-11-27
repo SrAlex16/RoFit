@@ -1,559 +1,450 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+   <head>
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1" />
+   <title>Rocío Tubío Personal Trainer</title>
 
-  <head>
+   <!-- Fuentes -->
+   <link
+      href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,900&display=swap"
+      rel="stylesheet"
+   />
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
-
-    <title>RoFit Personal Trainer</title>
-<!--
-
-TemplateMo 548 Training Studio
-
-https://templatemo.com/tm-548-training-studio
-
--->
-    <!-- Additional CSS Files -->
-    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
-
-    <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css">
-
-    <link rel="stylesheet" href="assets/css/templatemo-training-studio.css">
-
-    </head>
-    
-    <body>
-    
-    <!-- ***** Preloader Start ***** -->
-    <div id="js-preloader" class="js-preloader">
-      <div class="preloader-inner">
-        <span class="dot"></span>
-        <div class="dots">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-      </div>
-    </div>
-    <!-- ***** Preloader End ***** -->
-    
-    
-    <!-- ***** Header Area Start ***** -->
-    <header class="header-area header-sticky">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <nav class="main-nav">
-                        <a href="index.html" class="logo">Ro<em>Fit</em></a>
-                        <ul class="nav">
-                            <!-- BOTÓN DE IDIOMA - SIN scroll-to-section -->
-                            <li><a href="#" id="language-btn">English</a></li>
-                            
-                            <!-- Resto del menú - CON scroll-to-section -->
-                            <li class="scroll-to-section"><a href="#top" class="active" data-key="inicio">Inicio</a></li>
-                            <li class="scroll-to-section"><a href="#features" data-key="entrenamientos">Entrenamientos</a></li>
-                            <li class="scroll-to-section"><a href="#our-classes" data-key="servicios">Servicios</a></li>
-                            <li class="scroll-to-section"><a href="#nutricion" data-key="nutricion">Nutrición</a></li>
-                            <li class="scroll-to-section"><a href="#contact-us" data-key="contacto">Contacto</a></li> 
-                        </ul>        
-                        <a class='menu-trigger'>
-                            <span>Menu</span>
-                        </a>
-                    </nav>
-                </div>
+   <!-- CSS (IMPORTANTE: rutas sin espacios ni guiones raros) -->
+   <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css" />
+   <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css" />
+   <link
+      rel="stylesheet"
+      type="text/css"
+      href="assets/css/templatemo-training-studio.css"
+   />
+   </head>
+   <body>
+      <!-- ================= HEADER ================= -->
+      <header class="header-area header-sticky">
+         <div class="container">
+            <!-- Barra pequeña superior: correo + redes -->
+            <div class="header-contact-info">
+               <a href="mailto:tuemail@correo.com" class="header1
+                  email">tuemail@correo.com</a>
+               <div class="header-social">
+                  <a href="https://instagram.com" target="_blank"><i class="fa fainstagram"></i></a>
+                  <a href="https://wa.me/00000000" target="_blank"><i class="fa fawhatsapp"></i></a>
+               </div>
             </div>
-        </div>
-    </header>
-    <!-- ***** Header Area End ***** -->
-
-    <!-- ***** Main Banner Area Start ***** -->
-    <div class="main-banner" id="top">
-        <video autoplay muted loop id="bg-video">
-            <source src="assets/images/gym-video.mp4" type="video/mp4" />
-        </video>
-
-        <div class="video-overlay header-text">
-            <div class="caption">
-                <h6 data-key="banner_subtitle">Tu potencial, Desatado</h6>
-                <h2 data-key="banner_title">El cambio es <em>Hoy</em></h2>
-                <!--
-                <div class="main-button scroll-to-section">
-                    <a href="#features">Become a member</a>
-                </div>
-                -->
-            </div>
-        </div>
-    </div>
-    <!-- ***** Main Banner Area End ***** -->
-
-    <!-- ***** Features Item Start ***** -->
-    <section class="section" id="features">
-        <div class="container">
             <div class="row">
-                <div class="col-lg-6 offset-lg-3">
-                    <div class="section-heading">
-                        <h2 data-key="programas_title">Mis <em>Programas</em></h2>
-                        <img src="assets/images/line-dec.png" alt="waves">
-                        <p data-key="programas_desc">Entrena donde quieras: aire libre, domicilio, gimnasio o en línea. Ofrezco sesiones adaptadas a tu nivel y objetivos, con material incluido (domicilio/exterior), guía en máquinas/técnicas (gimnasio), o planificación flexible y seguimiento personalizado (online). Todas las opciones son combinables para máxima adaptabilidad.</p>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <ul class="features-items">
-                        <li class="feature-item">
-                            <div class="left-icon">
-                                <img src="assets/images/features-first-icon.png" alt="First One">
-                            </div>
-                            <div class="right-content">
-                                <h4 data-key="prog_individual">Entrenamiento Personal Individual</h4>
-                                <p data-key="prog_tarifas">Tarifas de entrenamiento:</p>
-                                </br>
-                                <ul>
-                                    <li data-key="sesion">1 sesión:<span id="personal-1_sesion"></span></li>
-                                    <li data-key="4_sesiones">4 sesiones:<span id="personal-4_sesion"></span></li>
-                                    <li data-key="8_sesiones">8 sesiones:<span id="personal-8_sesion"></span></li>
-                                    <li data-key="12_sesiones">12 sesiones:<span id="personal-12_sesion"></span></li>
-                                </ul>
-                                <!-- <a href="#" class="text-button">Discover More</a> -->
-                            </div>
-                        </li>
-                        <li class="feature-item">
-                            <div class="left-icon">
-                                <img src="assets/images/features-first-icon.png" alt="second one">
-                            </div>
-                            <div class="right-content">
-                                <h4 data-key="prog_pareja">Entrenamineto en Pareja (precios por persona)</h4>
-                                <p data-key="prog_pareja_tarifa">Tarifas de entrenamiento:</p>
-                                </br>
-                                <ul>
-                                    <li data-key="sesion">1 sesión:<span id="pareja-1_sesion"></span></li>
-                                    <li data-key="4_sesiones">4 sesiones:<span id="pareja-4_sesiones"></span></li>
-                                    <li data-key="8_sesiones">8 sesiones:<span id="pareja-8_sesiones"></span></li>
-                                    <li data-key="12_sesiones">12 sesiones:<span id="pareja-12_sesiones"></span></li>
-                                </ul>
-                                <!-- <a href="#" class="text-button">Discover More</a> -->
-                            </div>
-                        </li>
-                        <li class="feature-item">
-                            <div class="left-icon">
-                                <img src="assets/images/features-first-icon.png" alt="gym training">
-                            </div>
-                            <div class="right-content">
-                                <h4 data-key="prog_gimnasio">Entrenamientos en Gimnasio (📍Gimnasio Atlas)</h4>
-                                <p data-key="prog_gimnasio_extra">Se mantienen las mismas tarifas de entrenamiento más:</p>
-                                </br>
-                                <ul>
-                                    <li data-key="cuota_centro">Cuota mensual del centro aparte:<span id="gimnasio-cuota"></span></li>
-                                    <li data-key="cuota_centro_1">Bono de un día de lluvia:<span id="gimnasio-bono1"></span></li>
-                                    <li data-key="cuota_centro_10">Bono de 10 días de lluvia:<span id="gimnasio-bono10"></span></li>
-                                </ul>
-                                <!-- <a href="#" class="text-button">Discover More</a> -->
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-lg-6">
-                    <ul class="features-items">
-                        <li class="feature-item">
-                            <div class="left-icon">
-                                <img src="assets/images/features-first-icon.png" alt="third gym training">
-                            </div>
-                            <div class="right-content">
-                                <h4 data-key="prog_grupo_reducido">Grupos Reducidos (máx. 5 personas)</h4>
-                                <p data-key="prog_tarifas">Tarifas de entrenamiento:</p>
-                                </br>
-                                <ul>
-                                    <li data-key="sesion_hora">1 Sesión (1 hora): <span id="gruporeducido-1_sesion"></span></li>
-                                    <li data-key="4_sesiones">4 Sesiones: <span id="gruporeducido-4_sesiones"></span></li>
-                                    <li data-key="8_sesiones">8 Sesiones: <span id="gruporeducido-8_sesiones"></span></li>
-                                    </li data-key="12_sesiones"> 12 Sesiones: <span id="gruporeducido-12_sesiones"></span></li>
-                                </ul>
-                                <!-- <a href="#" class="text-button">Discover More</a> -->
-                            </div>
-                        </li>
-                        <li class="feature-item">
-                            <div class="left-icon">
-                                <img src="assets/images/features-first-icon.png" alt="third gym training">
-                            </div>
-                            <div class="right-content">
-                                <h4 data-key="prog_grupo_grande">Grupos Grandes (mín. 6 personas)</h4>
-                                <p data-key="prog_tarifas">Tarifas de entrenamiento:</p>
-                                </br>
-                                <ul>
-                                    <li data-key="sesion_hora">1 Sesión (1 hora):<span id="grupogrande-1_sesion"></span></li>
-                                    <li data-key="4_sesiones">4 Sesiones:<span id="grupogrande-4_sesiones"></span></li>
-                                    <li data-key="8_sesiones">8 Sesiones:<span id="grupogrande-8_sesiones"></span></li>
-                                    </li data-key="12_sesiones"> 12 Sesiones:<span id="grupogrande-12_sesiones"></span></li>
-                                </ul>
-                                <!-- <a href="#" class="text-button">Discover More</a> -->
-                            </div>
-                        </li>
-                        <li class="feature-item">
-                            <div class="left-icon">
-                                <img src="assets/images/features-first-icon.png" alt="gym training">
-                            </div>
-                            <div class="right-content">
-                                <h4 data-key="prog_online">Entrenamiento Personal Online</h4>
-                                <p data-key="prog_tarifas">Tarifas de entrenamiento:</p>
-                                </br>
-                                <ul>
-                                    <li data-key="prog_online_seg">Seguimiento online mensual:</li>
-                                    <ul>
-                                        <li data-key="2_sesiones_sem">2 Sesiones semanales:<span id="online-seg_2"></span></li>
-                                        <li data-key="4_sesiones_sem">3 Sesiones semanales:<span id="online-seg_4"></span></li>
-                                    </ul>
-                                </ul>
-                                <ul>
-                                    <li data-key="prog_online_clases">Seguimiento online mensual + clases en directo:</li>
-                                    <ul>
-                                        <li data-key="sesion_hora">1 Sesión (1 hora):<span id="online-1_sesion"></span></li>
-                                        <li data-key="4_sesiones">4 Sesiones:<span id="online-4_sesiones"></span></li>
-                                        <li data-key="8_sesiones">8 Sesiones:<span id="online-8_sesiones"></span></li>
-                                        </li data-key="12_sesiones"> 12 Sesiones:<span id="online-12_sesiones"></span></li>
-                                        </li data-key="extra"> Extra: : Clases de fitness, actividades dirigidas, preparación específica para
-                                        algún deporte o pruebas físicas y rehabilitación (consultar precio sin compromiso)</li>
-                                    </ul>
-                                </ul>
-                                <!-- <a href="#" class="text-button">Discover More</a> -->
-                            </div>
-                        </li>
-                    </ul>
-                </div>
+               <div class="col-12">
+                  <nav class="main-nav">
+                     <!-- LOGO -->
+                     <a href="index.html" class="logo">Ro<em>Fit</em></a>
+                     <!-- MENU -->
+                     <ul class="nav">
+                        <li><a href="#" id="language-btn">English</a></li>
+                        <li class="scroll-to-section"><a href="#top" class="active" datakey="inicio">Inicio</a></li>
+                        <li class="scroll-to-section"><a href="#features" datakey="quien_soy">Quién soy</a></li>
+                        <li class="scroll-to-section"><a href="#our-classes" datakey="servicios">Servicios</a></li>
+                        <li class="scroll-to-section"><a href="#nutricion" datakey="nutricion">Alimentación</a></li>
+                        <li class="scroll-to-section"><a href="#reto-fit" datakey="reto_fit">Reto Fit</a></li>
+                        <li class="scroll-to-section"><a href="#contact-us" datakey="contacto">Contacto</a></li>
+                     </ul>
+                     <a class="menu-trigger"><span>Menu</span></a>
+                  </nav>
+               </div>
             </div>
-        </div>
-    </section>
-    <!-- ***** Features Item End ***** -->
-
-    <!-- ***** Call to Action Start ***** -->
-    <section class="section" id="call-to-action">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-10 offset-lg-1">
-                    <div class="cta-content">
-                        <h2 data-key="cta_title">entrena <em>vive</em>, siente el <em>cambio</em>!</h2>
-                        <p data-key="cta_desc">No importa tu nivel ni punto de partida. En ROFIT, te guío en cada paso para que consigas el cuerpo y la energía que deseas con un entrenamiento personalizado y flexible, diseñado para tu ritmo y tus metas.</p>
-                        <!--
+         </div>
+      </header>
+      <!-- ================= HERO PRINCIPAL ================= -->
+      <div class="main-banner main-banner-rosa" id="top">
+         <div class="hero-overlay">
+            <div class="container">
+               <div class="row align-items-center">
+                  <div class="col-lg-6 col-md-12">
+                     <div class="caption">
+                        <h6>Rocío Tubío Personal Trainer</h6>
+                        <h2 data-key="banner_title">Entrena por y para ti</h2>
+                        <p data-key="banner_subtitle">Tu cambio empieza hoy.</p>
+                        2
                         <div class="main-button scroll-to-section">
-                            <a href="#our-classes">Become a member</a>
+                           <a href="#contact-us">CONTÁCTAME</a>
                         </div>
-                        -->
-                    </div>
-                </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-6 col-md-12">
+                     <div class="hero-image">
+                        <img src="assets/images/rocio-hero.jpg" alt="rocio tubio" />
+                     </div>
+                  </div>
+               </div>
             </div>
-        </div>
-    </section>
-    <!-- ***** Call to Action End ***** -->
-
-    <!-- ***** Our Classes Start ***** -->
-    <section class="section" id="our-classes">
-        <div class="container">
+         </div>
+      </div>
+      <!-- ================= QUIÉN SOY + SERVICIOS (TARIFAS) ================= -->
+      <section class="section" id="features">
+         <div class="container">
+         <div class="row">
+            <div class="col-lg-6 offset-lg-3">
+               <div class="section-heading">
+                  <h2 data-key="quien_soy_title">Quién <em>soy</em></h2>
+                  <img src="assets/images/line-dec.png" alt="waves" />
+                  <p data-key="quien_soy_desc">Entrenadora personal especializada en
+                     recomposición corporal, nutrición y glúteo.
+                  </p>
+               </div>
+            </div>
+         </div>
+         <!-- Bloque Quién Soy -->
+         <div class="row align-items-center about-wrapper mb-5">
+            <div class="col-md-5">
+               <img class="img-fluid rounded" src="assets/images/rocio-about.jpg" />
+            </div>
+            <div class="col-md-7">
+               <h3>Rocío Tubío Personal Trainer</h3>
+               <p>Soy entrenadora personal especializada en recomposición corporal,
+                  pérdida de grasa, fuerza y bienestar. Mi metodología se adapta 100% a tu
+                  nivel, tu ritmo y tus objetivos.
+               </p>
+               <div class="main-button"><a href="#contact-us">Conóceme +</a></div>
+            </div>
+         </div>
+         <!-- TARIFAS (se mantienen tus items originales + añadimos botones
+            “Adquirir plan”) -->
+         <div class="row">
+         <!-- COLUMNA 1 -->
+         3
+         <div class="col-lg-6">
+            <ul class="features-items">
+               <!-- Individual -->
+               <li class="feature-item">
+                  <div class="left-icon"><img src="assets/images/features-firsticon.png" /></div>
+                  <div class="right-content">
+                     <h4>Entrenamiento Personal Individual</h4>
+                     <ul>
+                        <li>1 sesión: <span id="personal-1_sesion"></span></li>
+                        <li>4 sesiones: <span id="personal-4_sesion"></span></li>
+                        <li>8 sesiones: <span id="personal-8_sesion"></span></li>
+                        <li>12 sesiones: <span id="personal-12_sesion"></span></li>
+                     </ul>
+                     <div class="main-button-outline">
+                        <a href="mailto:tuemail@correo.com?
+                           subject=Entrenamiento%20personal%20individual">Adquirir plan</a>
+                     </div>
+                  </div>
+               </li>
+               <!-- Parejas -->
+               <li class="feature-item">
+                  <div class="left-icon"><img src="assets/images/features-firsticon.png" /></div>
+                  <div class="right-content">
+                     <h4>Entrenamiento en Pareja</h4>
+                     <ul>
+                        <li>1 sesión: <span id="pareja-1_sesion"></span></li>
+                        <li>4 sesiones: <span id="pareja-4_sesiones"></span></li>
+                        <li>8 sesiones: <span id="pareja-8_sesiones"></span></li>
+                        <li>12 sesiones: <span id="pareja-12_sesiones"></span></li>
+                     </ul>
+                     <div class="main-button-outline">
+                        <a href="mailto:tuemail@correo.com?
+                           subject=Entrenamiento%20en%20pareja">Adquirir plan</a>
+                     </div>
+                  </div>
+               </li>
+               <!-- Gimnasio -->
+               <li class="feature-item">
+                  <div class="left-icon"><img src="assets/images/features-firsticon.png" /></div>
+                  <div class="right-content">
+                     <h4>Entrenamiento en Gimnasio</h4>
+                     <ul>
+                        <li>Cuota del centro: <span id="gimnasio-cuota"></span></li>
+                        <li>Bono lluvia 1 día: <span id="gimnasio-bono1"></span></li>
+                        <li>Bono lluvia 10 días: <span id="gimnasio-bono10"></span></
+                           4
+                           li>
+                     </ul>
+                     <div class="main-button-outline">
+                        <a href="mailto:tuemail@correo.com?
+                           subject=Entrenamiento%20en%20gimnasio">Adquirir plan</a>
+                     </div>
+                  </div>
+               </li>
+            </ul>
+         </div>
+         <!-- COLUMNA 2 -->
+         <div class="col-lg-6">
+            <ul class="features-items">
+               <!-- Grupo reducido -->
+               <li class="feature-item">
+                  <div class="left-icon"><img src="assets/images/features-firsticon.png"></div>
+                  <div class="right-content">
+                     <h4>Grupos Reducidos</h4>
+                     <ul>
+                        <li>1 Sesión: <span id="gruporeducido-1_sesion"></span></li>
+                        <li>4 Sesiones: <span id="gruporeducido-4_sesiones"></span></
+                           li>
+                        <li>8 Sesiones: <span id="gruporeducido-8_sesiones"></span></
+                           li>
+                        <li>12 Sesiones: <span id="gruporeducido-12_sesiones"></
+                           span>
+                        </li>
+                     </ul>
+                     <div class="main-button-outline"><a
+                        href="mailto:tuemail@correo.com?subject=Grupo%20reducido">Adquirir plan</a></
+                        div>
+                     </div>
+               </li>
+               <!-- Grupo grande -->
+               <li class="feature-item">
+               <div class="left-icon"><img src="assets/images/features-firsticon.png"></div>
+               <div class="right-content">
+               <h4>Grupos Grandes</h4>
+               <ul>
+               <li>1 Sesión: <span id="grupogrande-1_sesion"></span></li>
+               <li>4 Sesiones: <span id="grupogrande-4_sesiones"></span></
+               li>
+               <li>8 Sesiones: <span id="grupogrande-8_sesiones"></span></
+               li>
+               <li>12 Sesiones: <span id="grupogrande-12_sesiones"></span></
+               li>
+               5
+               </ul>
+               <div class="main-button-outline"><a
+                  href="mailto:tuemail@correo.com?subject=Grupo%20grande">Adquirir plan</a></
+               div>
+               </div>
+               </li>
+               <!-- Online -->
+               <li class="feature-item">
+               <div class="left-icon"><img src="assets/images/features-firsticon.png"></div>
+               <div class="right-content">
+               <h4>Entrenamiento Online</h4>
+               <ul>
+               <li>2 sesiones semanales: <span id="online-seg_2"></span></
+               li>
+               <li>3 sesiones semanales: <span id="online-seg_4"></span></
+               li>
+               </ul>
+               <div class="main-button-outline"><a
+                  href="mailto:tuemail@correo.com?subject=Entrenamiento%20online">Adquirir
+               plan</a></div>
+               </div>
+               </li>
+            </ul>
+            </div>
+            </div>
+         </div>
+      </section>
+      <!-- ================= SERVICIOS (DETALLE) ================= -->
+      <section class="section" id="our-classes">
+         <div class="container">
             <div class="row">
-                <div class="col-lg-6 offset-lg-3">
-                    <div class="section-heading">
-                        <h2 data-key="servicios"><em>Servicios</em></h2>
-                        <img src="assets/images/line-dec.png" alt="">
-                        <p data-key="servicios_desc">Variedad de clases y actividades adaptadas a tus objetivos.</p>
-                    </div>
-                </div>
+               <div class="col-lg-6 offset-lg-3">
+                  <div class="section-heading">
+                     <h2><em>Servicios</em></h2>
+                     <img src="assets/images/line-dec.png" />
+                     <p>Conoce todas mis modalidades de entrenamiento pensadas para
+                        adaptarse a tus objetivos.
+                     </p>
+                  </div>
+               </div>
             </div>
             <div class="row" id="tabs">
-              <div class="col-lg-4">
-                <ul>
-                  <li data-key="servicios_1"><a href='#tabs-1'><img src="assets/images/tabs-first-icon.png" alt="">Entrenamiento online y presencial</a></li>
-                  <li data-key="servicios_2"><a href='#tabs-2'><img src="assets/images/tabs-first-icon.png" alt="">Entrenamiento al aire libre y gimnasio</a></a></li>
-                  <li data-key="servicios_3"><a href='#tabs-3'><img src="assets/images/tabs-first-icon.png" alt="">Entrenamiento de fuerza + clases dirigidas fitness de cualquier modalidad</a></a></li>
-                  <li data-key="servicios_4"><a href='#tabs-4'><img src="assets/images/tabs-first-icon.png" alt="">Combinación de varios estilos y modalidades de entrenamiento a su preferencia</a></a></li>
-                  <!-- <div class="main-rounded-button"><a href="#">View All Schedules</a></div> -->
-                </ul>
-              </div>
-              <div class="col-lg-8">
-                <section class='tabs-content'>
-                  <article id='tabs-1'>
-                    <img src="assets/images/training-image-01.jpg" alt="First Class">
-                    <h4 data-key="servicios_1">Entrenamiento online y presencial</h4>
-                    <p data-key="servicios_1_desc">Entrenamiento de fuerza + clases dirigidas de fitness: Esta opción combina tus sesiones de fuerza personalizadas con clases dirigidas de cualquier modalidad que te apetezca, como Pilates, Yoga, Zumba, Bodypump o bodybalance y muchas más.  No solo trabajamos la fuerza, sino también movilidad, flexibilidad, resistencia, coordinación y equilibrio para que tu cuerpo se desarrolle de manera equilibrada y completa. Es ideal para quienes quieren un entrenamiento variado y eficaz, que no se quede solo en levantar peso sino que integre todos los aspectos del movimiento y del bienestar físico.</p>
-                    <!--
-                    <div class="main-button">
-                        <a href="#">View Schedule</a>
-                    </div>
-                    -->
-                  </article>
-                  <article id='tabs-2'>
-                    <img src="assets/images/training-image-02.jpg" alt="Second Training">
-                    <h4 data-key="servicios_2"> Entrenamiento al aire libre y gimnasio</h4>
-                    <p data-key="servicios_2_desc">Combinación de varios estilos y modalidades a tu preferencia: Con esta modalidad puedes crear tu propia rutina mezclando diferentes tipos de entrenamiento y ubicaciones según tus necesidades y preferencias. Por ejemplo, podemos entrenar fuerza en el gimnasio, otro día a la semana o al mes, hacer una clase de pilates u cualquier otra modalidad al aire libre y después completar otra sesión online desde casa, si por ejemplo, no tienes tiempo de desplazarte o estás de viaje o simplemente porque te apetece. También puedes combinar distintas modalidades en el mismo entorno si lo prefieres. Esta opción te permite entrenar de manera completamente personalizada, flexible y variada, adaptando cada sesión a tus objetivos, tu nivel y tus gustos, para que nunca te aburras y siempre saques el máximo provecho de tus entrenamientos.</p>
-                    <!--
-                    <div class="main-button">
-                        <a href="#">View Schedule</a>
-                    </div>
-                    -->
-                  </article>
-                  <article id='tabs-3'>
-                    <img src="assets/images/training-image-03.jpg" alt="Third Class">
-                    <h4 data-key="servicios_3"> Entrenamiento de fuerza + clases dirigidas fitness de cualquier modalidad</h4>
-                    <p data-key="servicios_3_desc">Esta modalidad te permite combinar sesiones presenciales con entrenamiento online, adaptándose a tu nivel, objetivos y disponibilidad. El entrenamiento online es ideal para quienes no pueden desplazarse, tienen horarios ajustados, están de viaje o simplemente quieren mayor comodidad, mientras que las sesiones presenciales permiten trabajar fuerza, técnica y movilidad con corrección directa.</br>Combinando ambos formatos puedes crear un plan flexible, variado y personalizado, por ejemplo: entrenar fuerza en el gimnasio, hacer una clase al aire libre y complementar con otra sesión online, asegurando entrenamientos efectivos y motivadores sin importar dónde estés.</p>
-                    <!--
-                    <div class="main-button">
-                        <a href="#">View Schedule</a>
-                    </div>
-                    -->
-                  </article>
-                  <article id='tabs-4'>
-                    <img src="assets/images/training-image-04.jpg" alt="Fourth Training">
-                    <h4 data-key="servicios_4">Combinación de varios estilos y modalidades de entrenamiento a su preferencia</h4>
-                    <p data-key="servicios_4_desc">Con esta modalidad puedes combinar sesiones en espacios abiertos y en gimnasio, adaptando tu entrenamiento a tus objetivos y preferencias. Entrenar al aire libre te permite conectar con la naturaleza, respirar aire fresco y moverte de forma más libre y dinámica, mientras que las sesiones en gimnasio te permiten trabajar fuerza, técnica y movilidad con todo el equipamiento disponible.</br>La combinación de ambos entornos hace tus entrenamientos más variados, completos y motivadores, y te da la flexibilidad de elegir dónde entrenar según el día, tu energía o incluso el clima.</p>
-                    <!--
-                    <div class="main-button">
-                        <a href="#">View Schedule</a>
-                    </div>
-                    -->
-                  </article>
-                </section>
-              </div>
+               <div class="col-lg-4">
+                  <ul>
+                     <li><a href="#tabs-1"><img src="assets/images/tabs-firsticon.png" /> Entrenamiento personal individual</a></li>
+                     6
+                     <li><a href="#tabs-2"><img src="assets/images/tabs-firsticon.png" /> Entrenamiento en grupos</a></li>
+                     <li><a href="#tabs-3"><img src="assets/images/tabs-firsticon.png" /> Programas intensivos</a></li>
+                     <li><a href="#tabs-4"><img src="assets/images/tabs-firsticon.png" /> Online & combinado</a></li>
+                  </ul>
+               </div>
+               <div class="col-lg-8">
+                  <section class="tabs-content">
+                     <article id="tabs-1">
+                        <img src="assets/images/training-image-01.jpg" />
+                        <h4>Entrenamiento personal individual</h4>
+                        <p>Propuesta personalizada, seguimiento constante y sesiones 100%
+                           adaptadas a tu nivel.
+                        </p>
+                     </article>
+                     <article id="tabs-2">
+                        <img src="assets/images/training-image-02.jpg" />
+                        <h4>Entrenamiento en grupo</h4>
+                        <p>Entrena acompañado, mejora tu motivación y comparte el proceso
+                           con otras personas.
+                        </p>
+                     </article>
+                     <article id="tabs-3">
+                        <img src="assets/images/training-image-03.jpg" />
+                        <h4>Programas intensivos</h4>
+                        <p>Glúteo, pérdida de grasa, bandas elásticas y más opciones.
+                           Rutinas completas listas para empezar.
+                        </p>
+                     </article>
+                     <article id="tabs-4">
+                        <img src="assets/images/training-image-04.jpg" />
+                        <h4>Entrenamiento online y combinado</h4>
+                        <p>Perfecto si buscas flexibilidad. Entrena desde casa, aire
+                           libre o gimnasio.
+                        </p>
+                     </article>
+                  </section>
+               </div>
             </div>
-        </div>
-    </section>
-    <!-- ***** Our Classes End ***** -->
-    
-    <section class="section" id="schedule">
-        <div class="container">
+         </div>
+      </section>
+      <!-- ================= ALIMENTACIÓN ================= -->
+      <section class="section" id="nutricion">
+         <div class="container">
             <div class="row">
-                <div class="col-lg-6 offset-lg-3">
-                    <div class="section-heading dark-bg">
-                        <h2 data-key="servicios_extra_title">Servicios <em>Extra</em></h2>
-                        <img src="assets/images/line-dec.png" alt="">
-                        <p data-key="servicios_extra_desc">Ofrezco una amplia y variada gama de clases para evitar la monotonía y optimizar tu progreso. El catálogo incluye disciplinas como Zumba, Pilates, Yoga, BodyPump, Spinning, entrenamiento híbrido y Crosstraining. Además, proporciono servicios especializados como preparación física para pruebas/competiciones, entrenamiento para embarazadas y rehabilitación, garantizando que cada actividad se adapte a tus objetivos y necesidades específicas.</p>
-                    </br><p style=font-style:italic ></p>
-                    </div>
-                </div>
+               <div class="col-lg-6 offset-lg-3">
+                  <div class="section-heading">
+                     7
+                     <h2>Tu <em>Alimentación</em></h2>
+                     <img src="assets/images/line-dec.png" />
+                     <p>Planes nutricionales personalizados para optimizar tus
+                        resultados.
+                     </p>
+                  </div>
+               </div>
             </div>
-            <!--
+            <div class="row nutrition-cards">
+               <div class="col-lg-4 offset-lg-2 col-md-6">
+                  <div class="nutrition-card">
+                     <h3>Nutrición mensual</h3>
+                     <div class="nutrition-price">24,99€</div>
+                     <ul>
+                        <li>Asesoramiento nutricional</li>
+                        <li>Revisiones quincenales</li>
+                        <li>Contacto 24/7 vía email</li>
+                     </ul>
+                     <div class="main-button"><a href="mailto:tuemail@correo.com?
+                        subject=Nutrición%20mensual">Adquirir plan</a></div>
+                  </div>
+               </div>
+               <div class="col-lg-4 col-md-6">
+                  <div class="nutrition-card">
+                     <h3>Nutrición trimestral</h3>
+                     <div class="nutrition-price">64,99€</div>
+                     <ul>
+                        <li>Asesoramiento nutricional</li>
+                        <li>Revisiones quincenales</li>
+                        <li>Contacto 24/7 vía email</li>
+                     </ul>
+                     <div class="main-button"><a href="mailto:tuemail@correo.com?
+                        subject=Nutrición%20trimestral">Adquirir plan</a></div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- ================= RETO FIT ================= -->
+      <section class="section reto-fit" id="reto-fit">
+         <div class="container">
             <div class="row">
-                <div class="col-lg-12">
-                    <div class="filters">
-                        <ul class="schedule-filter">
-                            <li class="active" data-tsfilter="monday">Monday</li>
-                            <li data-tsfilter="tuesday">Tuesday</li>
-                            <li data-tsfilter="wednesday">Wednesday</li>
-                            <li data-tsfilter="thursday">Thursday</li>
-                            <li data-tsfilter="friday">Friday</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-10 offset-lg-1">
-                    <div class="schedule-table filtering">
-                        <table>
-                            <tbody>
-                                <tr>
-                                    <td class="day-time">Fitness Class</td>
-                                    <td class="monday ts-item show" data-tsmeta="monday">10:00AM - 11:30AM</td>
-                                    <td class="tuesday ts-item" data-tsmeta="tuesday">2:00PM - 3:30PM</td>
-                                    <td>William G. Stewart</td>
-                                </tr>
-                                <tr>
-                                    <td class="day-time">Muscle Training</td>
-                                    <td class="friday ts-item" data-tsmeta="friday">10:00AM - 11:30AM</td>
-                                    <td class="thursday friday ts-item" data-tsmeta="thursday" data-tsmeta="friday">2:00PM - 3:30PM</td>
-                                    <td>Paul D. Newman</td>
-                                </tr>
-                                <tr>
-                                    <td class="day-time">Body Building</td>
-                                    <td class="tuesday ts-item" data-tsmeta="tuesday">10:00AM - 11:30AM</td>
-                                    <td class="monday ts-item show" data-tsmeta="monday">2:00PM - 3:30PM</td>
-                                    <td>Boyd C. Harris</td>
-                                </tr>
-                                <tr>
-                                    <td class="day-time">Yoga Training Class</td>
-                                    <td class="wednesday ts-item" data-tsmeta="wednesday">10:00AM - 11:30AM</td>
-                                    <td class="friday ts-item" data-tsmeta="friday">2:00PM - 3:30PM</td>
-                                    <td>Hector T. Daigle</td>
-                                </tr>
-                                <tr>
-                                    <td class="day-time">Advanced Training</td>
-                                    <td class="thursday ts-item" data-tsmeta="thursday">10:00AM - 11:30AM</td>
-                                    <td class="wednesday ts-item" data-tsmeta="wednesday">2:00PM - 3:30PM</td>
-                                    <td>Bret D. Bowers</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
+               <div class="col-lg-6 offset-lg-3">
+                  <div class="section-heading">
+                     <h2>Reto <em>Fit</em></h2>
+                     <img src="assets/images/line-dec.png" />
+                     8
+                     <p>21 días para bajar grasa con un plan completo de entrenamiento y
+                        alimentación.
+                     </p>
+                  </div>
+               </div>
             </div>
-            -->
-        </div>
-    </section>
-
-    <!-- ***** Testimonials Starts ***** -->
-    <section class="section" id="nutricion">
-        <div class="container">
+            <div class="row align-items-center">
+               <div class="col-lg-6">
+                  <img class="img-fluid reto-fit-image" src="assets/images/retofit.jpg" />
+               </div>
+               <div class="col-lg-6 reto-fit-content">
+                  <h3>¿Qué incluye?</h3>
+                  <ul>
+                     <li>Plan de alimentación</li>
+                     <li>Rutinas de ejercicio</li>
+                     <li>Coaching</li>
+                     <li>Chat privado</li>
+                  </ul>
+                  <div class="main-button"><a href="mailto:tuemail@correo.com?
+                     subject=Reto%20Fit">QUIERO EMPEZAR</a></div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- ================= CONTACTO ================= -->
+      <section class="section" id="contact-us">
+         <div class="container">
             <div class="row">
-                <div class="col-lg-6 offset-lg-3">
-                    <div class="section-heading">
-                        <h2 data-key="nutricion_title">Tu <em>Nutrición</em></h2>
-                        <img src="assets/images/line-dec.png" alt="">
-                        <p data-key="nutricion_desc">Ofrezco orientación y consejos básicos de nutrición para ayudarte a complementar tu entrenamiento, mejorar tus hábitos y alcanzar tus objetivos de forma más efectiva.</p>
-                    </br><p data-key="nutricion_price" font-style:italic >Orientación, guía y Consejos de Nutrición:<span id="nutricion-orientacion"></span></p>
-                    </div>
-                </div>
+               <div class="col-lg-6 offset-lg-3">
+                  <div class="section-heading">
+                     <h2><em>Contacto</em></h2>
+                     <img src="assets/images/line-dec.png" />
+                     <p>Escríbeme y te responderé lo antes posible.</p>
+                  </div>
+               </div>
             </div>
-            <!--
             <div class="row">
-                <div class="col-lg-4">
-                    <div class="trainer-item">
-                        <div class="image-thumb">
-                            <img src="assets/images/first-trainer.jpg" alt="">
+               <div class="col-lg-8 offset-lg-2 col-md-12 col-sm-12">
+                  <form id="contact" action="mailto:tuemail@correo.com" method="POST">
+                     <div class="row">
+                        <div class="col-md-6 col-sm-12">
+                           <fieldset>
+                              <input name="name" type="text" id="name" placeholder="Nombre"
+                                 required />
+                           </fieldset>
+                           9
                         </div>
-                        <div class="down-content">
-                            <span>Strength Trainer</span>
-                            <h4>Bret D. Bowers</h4>
-                            <p>Bitters cliche tattooed 8-bit distillery mustache. Keytar succulents gluten-free vegan church-key pour-over seitan flannel.</p>
-                            <ul class="social-icons">
-                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                                <li><a href="#"><i class="fa fa-behance"></i></a></li>
-                            </ul>
+                        <div class="col-md-6 col-sm-12">
+                           <fieldset>
+                              <input name="subject" type="text" id="subject"
+                                 placeholder="Teléfono" />
+                           </fieldset>
                         </div>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="trainer-item">
-                        <div class="image-thumb">
-                            <img src="assets/images/second-trainer.jpg" alt="">
+                        <div class="col-md-12 col-sm-12">
+                           <fieldset>
+                              <input name="email" type="email" id="email"
+                                 placeholder="Email" required />
+                           </fieldset>
                         </div>
-                        <div class="down-content">
-                            <span>Muscle Trainer</span>
-                            <h4>Hector T. Daigl</h4>
-                            <p>Bitters cliche tattooed 8-bit distillery mustache. Keytar succulents gluten-free vegan church-key pour-over seitan flannel.</p>
-                            <ul class="social-icons">
-                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                                <li><a href="#"><i class="fa fa-behance"></i></a></li>
-                            </ul>
+                        <div class="col-md-12 col-sm-12">
+                           <fieldset>
+                              <textarea name="message" rows="6" id="message"
+                                 placeholder="Comentario" required></textarea>
+                           </fieldset>
                         </div>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="trainer-item">
-                        <div class="image-thumb">
-                            <img src="assets/images/third-trainer.jpg" alt="">
+                        <div class="col-lg-12">
+                           <fieldset>
+                              <button type="submit" class="main-button">Enviar mensaje</
+                              button>
+                           </fieldset>
                         </div>
-                        <div class="down-content">
-                            <span>Power Trainer</span>
-                            <h4>Paul D. Newman</h4>
-                            <p>Bitters cliche tattooed 8-bit distillery mustache. Keytar succulents gluten-free vegan church-key pour-over seitan flannel.</p>
-                            <ul class="social-icons">
-                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                                <li><a href="#"><i class="fa fa-behance"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+                     </div>
+                  </form>
+               </div>
             </div>
-            -->
-        </div>
-    </section>
-    <!-- ***** Testimonials Ends ***** -->
-    
-    <!-- ***** Contact Us Area Starts ***** -->
-    <section class="section" id="contact-us">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-6 offset-lg-3">
-                <div class="section-heading"> 
-                    <h2 class="contact-us-styled-title" data-key="contacto_title">Ponte en <em>Contacto</em></h2>
-                    <img src="assets/images/line-dec.png" alt="waves">
-                    <p data-key="contacto_desc">¿Tienes preguntas? Rellena el formulario y te responderé lo antes posible.</p>
-                </div>
-            </div>
-            <div class="col-lg-6 col-md-6 col-xs-12">
-                <div id="map">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3169.755182880675!2d-5.984209787849215!3d37.39562157196699!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd126ea9a4926a05%3A0x7ad28a9d12af2847!2sGimnasio%20Atlas%20Sevilla%20-%20Polideportivo%20Universitario%20San%20Juan%20Bosco!5e0!3m2!1ses!2ses!4v1763579280484!5m2!1ses!2ses" width="100%" height="600px" frameborder="0" style="border:0" allowfullscreen></iframe>
-                </div>
-            </div>
-            <div class="col-lg-6 col-md-6 col-xs-12">
-                <div class="contact-form">
-                    <form id="contact" action="" method="post">
-                        <div class="row">
-                            <div class="col-md-6 col-sm-12">
-                                <fieldset>
-                                    <input name="name" type="text" id="name" data-key-placeholder="form_nombre" placeholder="Nombre*" required="">
-                                </fieldset>
-                            </div>
-                            <div class="col-md-6 col-sm-12">
-                                <fieldset>
-                                    <input name="email" type="text" id="email" pattern="[^ @]*@[^ @]*"  data-key-placeholder="form_email" placeholder="Email*" required="">
-                                </fieldset>
-                            </div>
-                            <div class="col-md-12 col-sm-12">
-                                <fieldset>
-                                    <input name="subject" type="text" id="subject"  data-key-placeholder="form_asunto" placeholder="Asunto">
-                                </fieldset>
-                            </div>
-                            <div class="col-lg-12">
-                                <fieldset>
-                                    <textarea name="message" rows="6" id="message"  data-key-placeholder="form_mensaje" placeholder="Mensaje" required=""></textarea>
-                                </fieldset>
-                            </div>
-                            <div class="col-lg-12">
-                                <fieldset>
-                                    <button type="submit" id="form-submit" class="main-button"  data-key="form_enviar">Enviar mensaje</button>
-                                </fieldset>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-    </section>
-    <!-- ***** Contact Us Area Ends ***** -->
-    
-    <!-- ***** Footer Start ***** -->
-    <!--
-    <footer>
-        <div class="container">
+         </div>
+      </section>
+      <!-- ================= FOOTER ================= -->
+      <footer>
+         <div class="container">
             <div class="row">
-                <div class="col-lg-12">
-                    <p>Copyright &copy; 2020 Training Studio
-                    
-                    - Designed by <a rel="nofollow" href="https://templatemo.com" class="tm-text-link" target="_parent">TemplateMo</a><br>
-
-                Distributed by <a rel="nofollow" href="https://themewagon.com" class="tm-text-link" target="_blank">ThemeWagon</a>
-                
-                </p>
-                    
-                </div>
+               <div class="col-lg-12">
+                  <p>© 2024 Rocío Tubío Personal Trainer.</p>
+               </div>
             </div>
-        </div>
-    </footer>
-    -->
-    <!-- ***** Footer End ***** -->
-
-    <!-- jQuery -->
-    <script src="assets/js/jquery-2.1.0.min.js"></script>
-
-    <!-- Bootstrap -->
-    <script src="assets/js/popper.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-
-    <!-- Plugins -->
-    <script src="assets/js/scrollreveal.min.js"></script>
-    <script src="assets/js/waypoints.min.js"></script>
-    <script src="assets/js/jquery.counterup.min.js"></script>
-    <script src="assets/js/imgfix.min.js"></script> 
-    <script src="assets/js/mixitup.js"></script> 
-    <script src="assets/js/accordions.js"></script>
-    
-    <!-- Global Init -->
-    <script src="assets/js/custom.js"></script>
-    <script src="assets/js/language.js"></script>
-
-  </body>
+         </div>
+      </footer>
+      <!-- JS -->
+      <script src="assets/js/jquery-2.1.0.min.js"></script>
+      <script src="assets/js/bootstrap.min.js"></script>
+      10
+      <script src="assets/js/popper.js"></script>
+      <script src="assets/js/scrollreveal.min.js"></script>
+      <script src="assets/js/waypoints.min.js"></script>
+      <script src="assets/js/jquery.counterup.min.js"></script>
+      <script src="assets/js/imgfix.min.js"></script>
+      <script src="assets/js/mixitup.js"></script>
+      <script src="assets/js/accordions.js"></script>
+      <script src="assets/js/language.js"></script>
+      <script src="assets/js/custom.js"></script>
+      <script src="assets/js/prices.js"></script>
+   </body>
 </html>
