@@ -22,11 +22,10 @@
       <div class="container">
          <!-- Barra pequeña superior: correo + redes -->
          <div class="header-contact-info">
-            <a href="mailto:tuemail@correo.com" class="header1
-                  email">tuemail@correo.com</a>
+            <a href="mailto:rofitworkout@gmail.com" class="header-email">rofitworkout@gmail.com</a>
             <div class="header-social">
-               <a href="https://instagram.com" target="_blank"><i class="fa fainstagram"></i></a>
-               <a href="https://wa.me/00000000" target="_blank"><i class="fa fawhatsapp"></i></a>
+               <a href="https://instagram.com" target="_blank"><i class="fa fa-instagram"></i></a>
+               <a href="https://wa.me/00000000" target="_blank"><i class="fa fa-whatsapp"></i></a>
             </div>
          </div>
          <div class="row">
@@ -38,11 +37,32 @@
                   <ul class="nav">
                      <li><a href="#" id="language-btn">English</a></li>
                      <li class="scroll-to-section"><a href="#top" class="active" datakey="inicio">Inicio</a></li>
-                     <li class="scroll-to-section"><a href="#features" datakey="quien_soy">Quién soy</a></li>
-                     <li class="scroll-to-section"><a href="#our-classes" datakey="servicios">Servicios</a></li>
+                     <li class="scroll-to-section"><a href="#quien-soy" datakey="quien_soy">Quién soy</a></li>
+                     <li class="submenu servicios-menu">
+                        <a href="javascript:void(0);" datakey="servicios">Servicios</a>
+                        <ul>
+                           <li><a href="#aumento-masa-muscular">Aumento masa muscular</a></li>
+                           <li><a href="#entrenamiento-online">Entrenamiento personal online</a></li>
+                           <li><a href="#recuperacion-lesiones">Entrenamiento de fuerza para la recuperación de lesiones</a></li>
+                           <li><a href="#suelo-pelvico">Suelo pélvico</a></li>
+                           <li><a href="#perdida-peso">Pérdida de peso</a></li>
+                           <li><a href="#pack-entrenamiento-nutricion">Pack de entrenamiento + nutrición</a></li>
+                           <li><a href="#pruebas-especificas">Preparación para pruebas o deportes específicos</a></li>
+                           <li><a href="#alto-rendimiento">Entrenamiento para deportistas de alto rendimiento</a></li>
+                           <li><a href="#pilates">Pilates</a></li>
+                           <li><a href="#hibrido">Entrenamiento híbrido</a></li>
+                           <li><a href="#funcional">Entrenamiento funcional</a></li>
+                           <li><a href="#crosstraining">Crosstraining</a></li>
+                           <li><a href="#embarazadas">Embarazadas y post-parto</a></li>
+                           <li><a href="#presencial">Entrenamiento personal presencial</a></li>
+                           <li><a href="#grupos">Entrenamiento presencial grupos reducidos (aire libre)</a></li>
+                        </ul>
+                     </li>
                      <li class="scroll-to-section"><a href="#nutricion" datakey="nutricion">Alimentación</a></li>
-                     <li class="scroll-to-section"><a href="#reto-fit" datakey="reto_fit">Reto Fit</a></li>
                      <li class="scroll-to-section"><a href="#contact-us" datakey="contacto">Contacto</a></li>
+                     <li class="logo-menu-item">
+                        <img src="assets/images/logo.jpeg" alt="RoFit Logo">
+                     </li>
                   </ul>
                   <a class="menu-trigger"><span>Menu</span></a>
                </nav>
@@ -50,221 +70,574 @@
          </div>
       </div>
    </header>
+   
    <!-- ================= HERO PRINCIPAL ================= -->
    <div class="main-banner main-banner-rosa" id="top">
       <div class="hero-overlay">
          <div class="container">
-            <div class="row align-items-center">
-               <div class="col-lg-6 col-md-12">
+            <div class="row align-items-start">
+               <!-- COLUMNA IZQUIERDA: IMAGEN HEADER1 -->
+               <div class="col-lg-3 col-md-6">
+                  <div class="hero-image-left">
+                     <img src="assets/images/header1.jpeg" alt="rocio tubio entrenando" />
+                  </div>
+               </div>
+               
+               <!-- COLUMNA CENTRAL: TEXTO -->
+               <div class="col-lg-5 col-md-6">
                   <div class="caption">
                      <h6>Rocío Tubío Personal Trainer</h6>
                      <h2 data-key="banner_title">Entrena por y para ti</h2>
                      <p data-key="banner_subtitle">Tu cambio empieza hoy.</p>
-                     2
                      <div class="main-button scroll-to-section">
                         <a href="#contact-us">CONTÁCTAME</a>
                      </div>
                   </div>
                </div>
-               <div class="col-lg-6 col-md-12">
-                  <div class="hero-image">
-                     <img src="assets/images/rocio-hero.jpg" alt="rocio tubio" />
+               
+               <!-- COLUMNA DERECHA: IMAGEN HEADER2 + FRASE -->
+               <div class="col-lg-4 col-md-12">
+                  <div class="hero-image-right">
+                     <img src="assets/images/header2.jpeg" alt="rompe tus límites" />
+                  </div>
+                  <div class="hero-phrase">
+                     <h3>Rompe tus límites</h3>
                   </div>
                </div>
             </div>
          </div>
       </div>
    </div>
-   <!-- ================= QUIÉN SOY + SERVICIOS (TARIFAS) ================= -->
-   <section class="section" id="features">
-      <div class="container">
 
-         <!-- TÍTULO -->
+   <!-- ================= QUIÉN SOY ================= -->
+   <section class="section" id="quien-soy">
+      <div class="container">
          <div class="row">
             <div class="col-lg-6 offset-lg-3">
                <div class="section-heading">
-                  <h2>Mis <em>Servicios</em></h2>
+                  <h2>Quién <em>Soy</em></h2>
                   <img src="assets/images/line-dec.png" alt="waves">
-                  <p>Entrenamientos adaptados a ti, a tu ritmo y a tus objetivos.</p>
                </div>
             </div>
          </div>
-
-         <!-- TARJETAS 3x2 -->
-         <div class="row">
-
-            <!-- TARJETA 1 -->
-            <div class="col-lg-4 col-md-6 mb-4">
-               <div class="service-card">
-                  <h4>Entrenamiento Personal</h4>
-                  <p>Sesiones individuales totalmente personalizadas.</p>
-                  <ul>
-                     <li>✔ Plan adaptado a tu objetivo</li>
-                     <li>✔ Seguimiento constante</li>
-                     <li>✔ Mejora de fuerza y composición corporal</li>
-                  </ul>
-                  <a href="mailto:tuemail@correo.com?subject=Info%20Entrenamiento%20Personal" class="service-btn">
-                     Solicitar información
-                  </a>
-               </div>
+         <div class="row align-items-center about-wrapper">
+            <div class="col-lg-6 col-md-12">
+               <img src="assets/images/rocio-about.jpg" alt="Rocío Tubío" class="img-fluid">
             </div>
-
-            <!-- TARJETA 2 -->
-            <div class="col-lg-4 col-md-6 mb-4">
-               <div class="service-card">
-                  <h4>Entrenamiento en Pareja</h4>
-                  <p>Entrena acompañado y aumenta tu motivación.</p>
-                  <ul>
-                     <li>✔ Sesiones dinámicas</li>
-                     <li>✔ Adaptado a ambos niveles</li>
-                     <li>✔ Objetivos compartidos</li>
-                  </ul>
-                  <a href="mailto:tuemail@correo.com?subject=Info%20Entrenamiento%20Pareja" class="service-btn">
-                     Solicitar información
-                  </a>
-               </div>
+            <div class="col-lg-6 col-md-12">
+               <h3>Rocío Tubío</h3>
+               <p>Soy entrenadora personal titulada con años de experiencia ayudando a personas a alcanzar sus objetivos de fitness y salud.</p>
+               <p>Mi método se basa en el entrenamiento personalizado, adaptado a tus necesidades específicas, ya sea que busques ganar masa muscular, perder peso, recuperarte de lesiones o mejorar tu rendimiento deportivo.</p>
+               <p>Creo firmemente que el entrenamiento debe ser sostenible, progresivo y, sobre todo, diseñado para ti.</p>
             </div>
-
-            <!-- TARJETA 3 -->
-            <div class="col-lg-4 col-md-6 mb-4">
-               <div class="service-card">
-                  <h4>Entrenamiento en Gimnasio</h4>
-                  <p>Aprende a entrenar correctamente en sala.</p>
-                  <ul>
-                     <li>✔ Corrección técnica</li>
-                     <li>✔ Rutinas efectivas</li>
-                     <li>✔ Progresión segura</li>
-                  </ul>
-                  <a href="mailto:tuemail@correo.com?subject=Info%20Entrenamiento%20Gimnasio" class="service-btn">
-                     Solicitar información
-                  </a>
-               </div>
-            </div>
-
-            <!-- TARJETA 4 -->
-            <div class="col-lg-4 col-md-6 mb-4">
-               <div class="service-card">
-                  <h4>Grupos Reducidos</h4>
-                  <p>Entrena en grupos pequeños y controlados.</p>
-                  <ul>
-                     <li>✔ Atención cercana</li>
-                     <li>✔ Plazas limitadas</li>
-                     <li>✔ Ambiente motivador</li>
-                  </ul>
-                  <a href="mailto:tuemail@correo.com?subject=Info%20Grupos%20Reducidos" class="service-btn">
-                     Solicitar información
-                  </a>
-               </div>
-            </div>
-
-            <!-- TARJETA 5 -->
-            <div class="col-lg-4 col-md-6 mb-4">
-               <div class="service-card">
-                  <h4>Grupos Grandes</h4>
-                  <p>Entrenamientos grupales dinámicos.</p>
-                  <ul>
-                     <li>✔ Energía de grupo</li>
-                     <li>✔ Trabajo global</li>
-                     <li>✔ Ideal para constancia</li>
-                  </ul>
-                  <a href="mailto:tuemail@correo.com?subject=Info%20Grupos%20Grandes" class="service-btn">
-                     Solicitar información
-                  </a>
-               </div>
-            </div>
-
-            <!-- TARJETA 6 -->
-            <div class="col-lg-4 col-md-6 mb-4">
-               <div class="service-card">
-                  <h4>Entrenamiento Online</h4>
-                  <p>Entrena desde donde quieras.</p>
-                  <ul>
-                     <li>✔ Rutinas personalizadas</li>
-                     <li>✔ Seguimiento online</li>
-                     <li>✔ Flexibilidad total</li>
-                  </ul>
-                  <a href="mailto:tuemail@correo.com?subject=Info%20Entrenamiento%20Online" class="service-btn">
-                     Solicitar información
-                  </a>
-               </div>
-            </div>
-
          </div>
       </div>
    </section>
 
-   <!-- ================= SERVICIOS (DETALLE) ================= -->
-   <section class="section" id="our-classes">
+   <!-- ================= AUMENTO MASA MUSCULAR ================= -->
+   <section class="section service-section" id="aumento-masa-muscular">
       <div class="container">
          <div class="row">
             <div class="col-lg-6 offset-lg-3">
                <div class="section-heading">
-                  <h2><em>Servicios</em></h2>
-                  <img src="assets/images/line-dec.png" />
-                  <p>Conoce todas mis modalidades de entrenamiento pensadas para
-                     adaptarse a tus objetivos.
-                  </p>
+                  <h2>Aumento <em>Masa Muscular</em></h2>
+                  <img src="assets/images/line-dec.png" alt="waves">
                </div>
             </div>
          </div>
-         <div class="row" id="tabs">
-            <div class="col-lg-4">
-               <ul>
-                  <li><a href="#tabs-1"><img src="assets/images/tabs-firsticon.png" /> Entrenamiento personal
-                        individual</a></li>
-                  6
-                  <li><a href="#tabs-2"><img src="assets/images/tabs-firsticon.png" /> Entrenamiento en grupos</a></li>
-                  <li><a href="#tabs-3"><img src="assets/images/tabs-firsticon.png" /> Programas intensivos</a></li>
-                  <li><a href="#tabs-4"><img src="assets/images/tabs-firsticon.png" /> Online & combinado</a></li>
+         <div class="row align-items-center">
+            <div class="col-lg-6 col-md-12">
+               <h3>Construye músculo de forma efectiva</h3>
+               <p>Programa específico diseñado para aumentar tu masa muscular de manera progresiva y sostenible.</p>
+               <ul class="service-benefits">
+                  <li>✓ Plan de entrenamiento de fuerza personalizado</li>
+                  <li>✓ Progresión controlada de cargas</li>
+                  <li>✓ Seguimiento de medidas y evolución</li>
+                  <li>✓ Asesoramiento nutricional para hipertrofia</li>
+                  <li>✓ Ajustes según tu respuesta al entrenamiento</li>
                </ul>
+               <div class="main-button">
+                  <a href="/cdn-cgi/l/email-protection#abd9c4cdc2dfdcc4d9c0c4dedfebccc6cac2c785c8c4c6">SOLICITAR INFORMACIÓN</a>
+               </div>
             </div>
-            <div class="col-lg-8">
-               <section class="tabs-content">
-                  <article id="tabs-1">
-                     <img src="assets/images/training-image-01.jpg" />
-                     <h4>Entrenamiento personal individual</h4>
-                     <p>Propuesta personalizada, seguimiento constante y sesiones 100%
-                        adaptadas a tu nivel.
-                     </p>
-                  </article>
-                  <article id="tabs-2">
-                     <img src="assets/images/training-image-02.jpg" />
-                     <h4>Entrenamiento en grupo</h4>
-                     <p>Entrena acompañado, mejora tu motivación y comparte el proceso
-                        con otras personas.
-                     </p>
-                  </article>
-                  <article id="tabs-3">
-                     <img src="assets/images/training-image-03.jpg" />
-                     <h4>Programas intensivos</h4>
-                     <p>Glúteo, pérdida de grasa, bandas elásticas y más opciones.
-                        Rutinas completas listas para empezar.
-                     </p>
-                  </article>
-                  <article id="tabs-4">
-                     <img src="assets/images/training-image-04.jpg" />
-                     <h4>Entrenamiento online y combinado</h4>
-                     <p>Perfecto si buscas flexibilidad. Entrena desde casa, aire
-                        libre o gimnasio.
-                     </p>
-                  </article>
-               </section>
+            <div class="col-lg-6 col-md-12">
+               <img src="assets/images/masa-muscular.jpg" alt="Aumento masa muscular" class="img-fluid service-img">
             </div>
          </div>
       </div>
    </section>
+
+   <!-- ================= ENTRENAMIENTO PERSONAL ONLINE ================= -->
+   <section class="section service-section" id="entrenamiento-online">
+      <div class="container">
+         <div class="row">
+            <div class="col-lg-6 offset-lg-3">
+               <div class="section-heading">
+                  <h2>Entrenamiento Personal <em>Online</em></h2>
+                  <img src="assets/images/line-dec.png" alt="waves">
+               </div>
+            </div>
+         </div>
+         <div class="row align-items-center">
+            <div class="col-lg-6 col-md-12">
+               <img src="assets/images/online.jpg" alt="Entrenamiento Online" class="img-fluid service-img">
+            </div>
+            <div class="col-lg-6 col-md-12">
+               <h3>Entrena desde donde estés</h3>
+               <p>Recibe tu plan de entrenamiento personalizado y seguimiento continuo, sin importar dónde te encuentres.</p>
+               <ul class="service-benefits">
+                  <li>✓ Rutinas adaptadas a tu disponibilidad de equipamiento</li>
+                  <li>✓ Vídeos explicativos de cada ejercicio</li>
+                  <li>✓ Seguimiento semanal de tu progreso</li>
+                  <li>✓ Ajustes del plan según tu evolución</li>
+                  <li>✓ Comunicación constante vía email/WhatsApp</li>
+               </ul>
+               <div class="main-button">
+                  <a href="/cdn-cgi/l/email-protection#c2b0ada4abb6b5adb0a9adb7b682a5afa3abaeeca1adaf">SOLICITAR INFORMACIÓN</a>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <!-- ================= RECUPERACIÓN DE LESIONES ================= -->
+   <section class="section service-section" id="recuperacion-lesiones">
+      <div class="container">
+         <div class="row">
+            <div class="col-lg-6 offset-lg-3">
+               <div class="section-heading">
+                  <h2>Recuperación <em>de Lesiones</em></h2>
+                  <img src="assets/images/line-dec.png" alt="waves">
+               </div>
+            </div>
+         </div>
+         <div class="row align-items-center">
+            <div class="col-lg-6 col-md-12">
+               <h3>Vuelve más fuerte</h3>
+               <p>Entrenamiento de fuerza específico para la rehabilitación y prevención de lesiones.</p>
+               <ul class="service-benefits">
+                  <li>✓ Valoración inicial del estado de la lesión</li>
+                  <li>✓ Ejercicios progresivos de fortalecimiento</li>
+                  <li>✓ Trabajo de movilidad y estabilidad</li>
+                  <li>✓ Coordinación con fisioterapeutas si es necesario</li>
+                  <li>✓ Prevención de futuras lesiones</li>
+               </ul>
+               <div class="main-button">
+                  <a href="/cdn-cgi/l/email-protection#c9bba6afa0bdbea6bba2a6bcbd89aea4a8a0a5e7aaa6a4">SOLICITAR INFORMACIÓN</a>
+               </div>
+            </div>
+            <div class="col-lg-6 col-md-12">
+               <img src="assets/images/lesiones.jpg" alt="Recuperación lesiones" class="img-fluid service-img">
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <!-- ================= SUELO PÉLVICO ================= -->
+   <section class="section service-section" id="suelo-pelvico">
+      <div class="container">
+         <div class="row">
+            <div class="col-lg-6 offset-lg-3">
+               <div class="section-heading">
+                  <h2>Suelo <em>Pélvico</em></h2>
+                  <img src="assets/images/line-dec.png" alt="waves">
+               </div>
+            </div>
+         </div>
+         <div class="row align-items-center">
+            <div class="col-lg-6 col-md-12">
+               <img src="assets/images/suelo-pelvico.jpg" alt="Suelo pélvico" class="img-fluid service-img">
+            </div>
+            <div class="col-lg-6 col-md-12">
+               <h3>Fortalece tu core profundo</h3>
+               <p>Entrenamiento especializado para el fortalecimiento del suelo pélvico y prevención de disfunciones.</p>
+               <ul class="service-benefits">
+                  <li>✓ Ejercicios de activación del suelo pélvico</li>
+                  <li>✓ Trabajo de respiración y conexión</li>
+                  <li>✓ Fortalecimiento del core integral</li>
+                  <li>✓ Adaptación a embarazo y postparto</li>
+                  <li>✓ Prevención de incontinencias</li>
+               </ul>
+               <div class="main-button">
+                  <a href="/cdn-cgi/l/email-protection#a1d3cec7c8d5d6ced3caced4d5e1c6ccc0c8cd8fc2cecc">SOLICITAR INFORMACIÓN</a>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <!-- ================= PÉRDIDA DE PESO ================= -->
+   <section class="section service-section" id="perdida-peso">
+      <div class="container">
+         <div class="row">
+            <div class="col-lg-6 offset-lg-3">
+               <div class="section-heading">
+                  <h2>Pérdida <em>de Peso</em></h2>
+                  <img src="assets/images/line-dec.png" alt="waves">
+               </div>
+            </div>
+         </div>
+         <div class="row align-items-center">
+            <div class="col-lg-6 col-md-12">
+               <h3>Alcanza tu peso saludable</h3>
+               <p>Programa integral que combina entrenamiento y hábitos nutricionales para una pérdida de peso sostenible.</p>
+               <ul class="service-benefits">
+                  <li>✓ Entrenamiento adaptado a tu nivel</li>
+                  <li>✓ Combinación de fuerza y cardio</li>
+                  <li>✓ Asesoramiento nutricional básico</li>
+                  <li>✓ Control semanal del progreso</li>
+                  <li>✓ Enfoque en hábitos sostenibles</li>
+               </ul>
+               <div class="main-button">
+                  <a href="/cdn-cgi/l/email-protection#ee9c8188879a99819c85819b9aae89838f8782c08d8183">SOLICITAR INFORMACIÓN</a>
+               </div>
+            </div>
+            <div class="col-lg-6 col-md-12">
+               <img src="assets/images/perdida-peso.jpg" alt="Pérdida de peso" class="img-fluid service-img">
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <!-- ================= PACK ENTRENAMIENTO + NUTRICIÓN ================= -->
+   <section class="section service-section" id="pack-entrenamiento-nutricion">
+      <div class="container">
+         <div class="row">
+            <div class="col-lg-6 offset-lg-3">
+               <div class="section-heading">
+                  <h2>Pack <em>Entrenamiento + Nutrición</em></h2>
+                  <img src="assets/images/line-dec.png" alt="waves">
+               </div>
+            </div>
+         </div>
+         <div class="row align-items-center">
+            <div class="col-lg-6 col-md-12">
+               <img src="assets/images/pack-completo.jpg" alt="Pack completo" class="img-fluid service-img">
+            </div>
+            <div class="col-lg-6 col-md-12">
+               <h3>La fórmula completa para el éxito</h3>
+               <p>Combina el entrenamiento personalizado con un plan nutricional diseñado específicamente para ti.</p>
+               <ul class="service-benefits">
+                  <li>✓ Plan de entrenamiento completo</li>
+                  <li>✓ Plan nutricional personalizado</li>
+                  <li>✓ Seguimiento integral semanal</li>
+                  <li>✓ Ajustes según tu evolución</li>
+                  <li>✓ Soporte continuo</li>
+               </ul>
+               <div class="main-button">
+                  <a href="/cdn-cgi/l/email-protection#13617c757a67647c61787c666753747e727a7f3d707c7e">SOLICITAR INFORMACIÓN</a>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <!-- ================= PRUEBAS ESPECÍFICAS ================= -->
+   <section class="section service-section" id="pruebas-especificas">
+      <div class="container">
+         <div class="row">
+            <div class="col-lg-6 offset-lg-3">
+               <div class="section-heading">
+                  <h2>Preparación <em>Deportes Específicos</em></h2>
+                  <img src="assets/images/line-dec.png" alt="waves">
+               </div>
+            </div>
+         </div>
+         <div class="row align-items-center">
+            <div class="col-lg-6 col-md-12">
+               <h3>Prepárate para tu reto</h3>
+               <p>Entrenamiento específico para pruebas de acceso, oposiciones o competiciones deportivas.</p>
+               <ul class="service-benefits">
+                  <li>✓ Análisis de requisitos de la prueba</li>
+                  <li>✓ Plan específico para mejorar marcas</li>
+                  <li>✓ Test de valoración periódicos</li>
+                  <li>✓ Trabajo técnico y físico</li>
+                  <li>✓ Estrategias para el día de la prueba</li>
+               </ul>
+               <div class="main-button">
+                  <a href="/cdn-cgi/l/email-protection#70021f161904071f021b1f050430171d11191c5e131f1d">SOLICITAR INFORMACIÓN</a>
+               </div>
+            </div>
+            <div class="col-lg-6 col-md-12">
+               <img src="assets/images/pruebas.jpg" alt="Preparación pruebas" class="img-fluid service-img">
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <!-- ================= ALTO RENDIMIENTO ================= -->
+   <section class="section service-section" id="alto-rendimiento">
+      <div class="container">
+         <div class="row">
+            <div class="col-lg-6 offset-lg-3">
+               <div class="section-heading">
+                  <h2>Alto <em>Rendimiento</em></h2>
+                  <img src="assets/images/line-dec.png" alt="waves">
+               </div>
+            </div>
+         </div>
+         <div class="row align-items-center">
+            <div class="col-lg-6 col-md-12">
+               <img src="assets/images/alto-rendimiento.jpg" alt="Alto rendimiento" class="img-fluid service-img">
+            </div>
+            <div class="col-lg-6 col-md-12">
+               <h3>Lleva tu rendimiento al máximo</h3>
+               <p>Entrenamiento avanzado para deportistas que buscan optimizar su rendimiento competitivo.</p>
+               <ul class="service-benefits">
+                  <li>✓ Periodización avanzada del entrenamiento</li>
+                  <li>✓ Análisis biomecánico</li>
+                  <li>✓ Trabajo de potencia y velocidad</li>
+                  <li>✓ Estrategias de recuperación</li>
+                  <li>✓ Seguimiento de métricas de rendimiento</li>
+               </ul>
+               <div class="main-button">
+                  <a href="/cdn-cgi/l/email-protection#b2c0ddd4dbc6c5ddc0d9ddc7c6f2d5dfd3dbde9cd1dddf">SOLICITAR INFORMACIÓN</a>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <!-- ================= PILATES ================= -->
+   <section class="section service-section" id="pilates">
+      <div class="container">
+         <div class="row">
+            <div class="col-lg-6 offset-lg-3">
+               <div class="section-heading">
+                  <h2><em>Pilates</em></h2>
+                  <img src="assets/images/line-dec.png" alt="waves">
+               </div>
+            </div>
+         </div>
+         <div class="row align-items-center">
+            <div class="col-lg-6 col-md-12">
+               <h3>Conexión mente-cuerpo</h3>
+               <p>Sesiones de Pilates enfocadas en el control, la respiración y el fortalecimiento del core.</p>
+               <ul class="service-benefits">
+                  <li>✓ Mejora de la postura</li>
+                  <li>✓ Fortalecimiento profundo del core</li>
+                  <li>✓ Aumento de la flexibilidad</li>
+                  <li>✓ Reducción del estrés</li>
+                  <li>✓ Prevención de dolores de espalda</li>
+               </ul>
+               <div class="main-button">
+                  <a href="/cdn-cgi/l/email-protection#deacb1b8b7aaa9b1acb5b1abaa9eb9b3bfb7b2f0bdb1b3">SOLICITAR INFORMACIÓN</a>
+               </div>
+            </div>
+            <div class="col-lg-6 col-md-12">
+               <img src="assets/images/pilates.jpg" alt="Pilates" class="img-fluid service-img">
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <!-- ================= ENTRENAMIENTO HÍBRIDO ================= -->
+   <section class="section service-section" id="hibrido">
+      <div class="container">
+         <div class="row">
+            <div class="col-lg-6 offset-lg-3">
+               <div class="section-heading">
+                  <h2>Entrenamiento <em>Híbrido</em></h2>
+                  <img src="assets/images/line-dec.png" alt="waves">
+               </div>
+            </div>
+         </div>
+         <div class="row align-items-center">
+            <div class="col-lg-6 col-md-12">
+               <img src="assets/images/hibrido.jpg" alt="Entrenamiento híbrido" class="img-fluid service-img">
+            </div>
+            <div class="col-lg-6 col-md-12">
+               <h3>Lo mejor de dos mundos</h3>
+               <p>Combina entrenamiento de fuerza con trabajo cardiovascular para resultados completos.</p>
+               <ul class="service-benefits">
+                  <li>✓ Desarrollo muscular y resistencia</li>
+                  <li>✓ Mejora de la composición corporal</li>
+                  <li>✓ Aumento de la capacidad aeróbica</li>
+                  <li>✓ Variedad en los entrenamientos</li>
+                  <li>✓ Programación equilibrada</li>
+               </ul>
+               <div class="main-button">
+                  <a href="/cdn-cgi/l/email-protection#88fae7eee1fcffe7fae3e7fdfcc8efe5e9e1e4a6ebe7e5">SOLICITAR INFORMACIÓN</a>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <!-- ================= ENTRENAMIENTO FUNCIONAL ================= -->
+   <section class="section service-section" id="funcional">
+      <div class="container">
+         <div class="row">
+            <div class="col-lg-6 offset-lg-3">
+               <div class="section-heading">
+                  <h2>Entrenamiento <em>Funcional</em></h2>
+                  <img src="assets/images/line-dec.png" alt="waves">
+               </div>
+            </div>
+         </div>
+         <div class="row align-items-center">
+            <div class="col-lg-6 col-md-12">
+               <h3>Muévete mejor en tu día a día</h3>
+               <p>Entrenamiento basado en movimientos naturales que mejoran tu funcionalidad diaria.</p>
+               <ul class="service-benefits">
+                  <li>✓ Ejercicios multiarticulares</li>
+                  <li>✓ Mejora del equilibrio y coordinación</li>
+                  <li>✓ Fortalecimiento global</li>
+                  <li>✓ Prevención de lesiones</li>
+                  <li>✓ Transferencia a actividades cotidianas</li>
+               </ul>
+               <div class="main-button">
+                  <a href="/cdn-cgi/l/email-protection#d4a6bbb2bda0a3bba6bfbba1a094b3b9b5bdb8fab7bbb9">SOLICITAR INFORMACIÓN</a>
+               </div>
+            </div>
+            <div class="col-lg-6 col-md-12">
+               <img src="assets/images/funcional.jpg" alt="Entrenamiento funcional" class="img-fluid service-img">
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <!-- ================= CROSSTRAINING ================= -->
+   <section class="section service-section" id="crosstraining">
+      <div class="container">
+         <div class="row">
+            <div class="col-lg-6 offset-lg-3">
+               <div class="section-heading">
+                  <h2><em>Crosstraining</em></h2>
+                  <img src="assets/images/line-dec.png" alt="waves">
+               </div>
+            </div>
+         </div>
+         <div class="row align-items-center">
+            <div class="col-lg-6 col-md-12">
+               <img src="assets/images/crosstraining.jpg" alt="Crosstraining" class="img-fluid service-img">
+            </div>
+            <div class="col-lg-6 col-md-12">
+               <h3>Entrena con intensidad</h3>
+               <p>Sesiones de alta intensidad que combinan diferentes modalidades de entrenamiento.</p>
+               <ul class="service-benefits">
+                  <li>✓ WODs personalizados</li>
+                  <li>✓ Mejora de fuerza, potencia y resistencia</li>
+                  <li>✓ Trabajo técnico de movimientos olímpicos</li>
+                  <li>✓ Entrenamiento metabólico</li>
+                  <li>✓ Comunidad y motivación</li>
+               </ul>
+               <div class="main-button">
+                  <a href="/cdn-cgi/l/email-protection#dcaeb3bab5a8abb3aeb7b3a9a89cbbb1bdb5b0f2bfb3b1">SOLICITAR INFORMACIÓN</a>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <!-- ================= EMBARAZADAS Y POST-PARTO ================= -->
+   <section class="section service-section" id="embarazadas">
+      <div class="container">
+         <div class="row">
+            <div class="col-lg-6 offset-lg-3">
+               <div class="section-heading">
+                  <h2>Embarazadas y <em>Post-Parto</em></h2>
+                  <img src="assets/images/line-dec.png" alt="waves">
+               </div>
+            </div>
+         </div>
+         <div class="row align-items-center">
+            <div class="col-lg-6 col-md-12">
+               <h3>Cuida de ti en esta etapa</h3>
+               <p>Entrenamiento seguro y adaptado para el embarazo y la recuperación postparto.</p>
+               <ul class="service-benefits">
+                  <li>✓ Ejercicios seguros para cada trimestre</li>
+                  <li>✓ Fortalecimiento del suelo pélvico</li>
+                  <li>✓ Preparación para el parto</li>
+                  <li>✓ Recuperación abdominal postparto</li>
+                  <li>✓ Prevención de diástasis</li>
+               </ul>
+               <div class="main-button">
+                  <a href="/cdn-cgi/l/email-protection#fa88959c938e8d958891958f8eba9d979b9396d4999597">SOLICITAR INFORMACIÓN</a>
+               </div>
+            </div>
+            <div class="col-lg-6 col-md-12">
+               <img src="assets/images/embarazo.jpg" alt="Embarazadas y post-parto" class="img-fluid service-img">
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <!-- ================= ENTRENAMIENTO PERSONAL PRESENCIAL ================= -->
+   <section class="section service-section" id="presencial">
+      <div class="container">
+         <div class="row">
+            <div class="col-lg-6 offset-lg-3">
+               <div class="section-heading">
+                  <h2>Entrenamiento Personal <em>Presencial</em></h2>
+                  <img src="assets/images/line-dec.png" alt="waves">
+               </div>
+            </div>
+         </div>
+         <div class="row align-items-center">
+            <div class="col-lg-6 col-md-12">
+               <img src="assets/images/presencial.jpg" alt="Entrenamiento presencial" class="img-fluid service-img">
+            </div>
+            <div class="col-lg-6 col-md-12">
+               <h3>Sesiones individuales cara a cara</h3>
+               <p>Entrenamiento personalizado en gimnasio o al aire libre con supervisión constante.</p>
+               <ul class="service-benefits">
+                  <li>✓ Atención 100% personalizada</li>
+                  <li>✓ Corrección técnica inmediata</li>
+                  <li>✓ Motivación y seguimiento directo</li>
+                  <li>✓ Adaptación en tiempo real</li>
+                  <li>✓ Máxima efectividad</li>
+               </ul>
+               <div class="main-button">
+                  <a href="/cdn-cgi/l/email-protection#cebca1a8a7bab9a1bca5a1bbba8ea9a3afa7a2e0ada1a3">SOLICITAR INFORMACIÓN</a>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <!-- ================= GRUPOS REDUCIDOS ================= -->
+   <section class="section service-section" id="grupos">
+      <div class="container">
+         <div class="row">
+            <div class="col-lg-6 offset-lg-3">
+               <div class="section-heading">
+                  <h2>Grupos Reducidos <em>(Aire Libre)</em></h2>
+                  <img src="assets/images/line-dec.png" alt="waves">
+               </div>
+            </div>
+         </div>
+         <div class="row align-items-center">
+            <div class="col-lg-6 col-md-12">
+               <h3>Entrena en comunidad</h3>
+               <p>Sesiones en grupos pequeños al aire libre, combinando motivación grupal con atención personalizada.</p>
+               <ul class="service-benefits">
+                  <li>✓ Grupos de máximo 6-8 personas</li>
+                  <li>✓ Entrenamiento al aire libre</li>
+                  <li>✓ Ambiente motivador</li>
+                  <li>✓ Atención personalizada</li>
+                  <li>✓ Precio más accesible</li>
+               </ul>
+               <div class="main-button">
+                  <a href="/cdn-cgi/l/email-protection#8dffe2ebe4f9fae2ffe6e2f8f9cdeae0ece4e1a3eee2e0">SOLICITAR INFORMACIÓN</a>
+               </div>
+            </div>
+            <div class="col-lg-6 col-md-12">
+               <img src="assets/images/grupos.jpg" alt="Grupos reducidos" class="img-fluid service-img">
+            </div>
+         </div>
+      </div>
+   </section>
+
    <!-- ================= ALIMENTACIÓN ================= -->
    <section class="section" id="nutricion">
       <div class="container">
          <div class="row">
             <div class="col-lg-6 offset-lg-3">
                <div class="section-heading">
-                  7
                   <h2>Tu <em>Alimentación</em></h2>
                   <img src="assets/images/line-dec.png" />
-                  <p>Planes nutricionales personalizados para optimizar tus
-                     resultados.
-                  </p>
+                  <p>Planes nutricionales personalizados para optimizar tus resultados.</p>
                </div>
             </div>
          </div>
@@ -278,8 +651,7 @@
                      <li>Revisiones quincenales</li>
                      <li>Contacto 24/7 vía email</li>
                   </ul>
-                  <div class="main-button"><a href="mailto:tuemail@correo.com?
-                        subject=Nutrición%20mensual">Adquirir plan</a></div>
+                  <div class="main-button"><a href="/cdn-cgi/l/email-protection#3b49545d524f4c544950544e4f7b5c565a525715585456">Adquirir plan</a></div>
                </div>
             </div>
             <div class="col-lg-4 col-md-6">
@@ -291,46 +663,13 @@
                      <li>Revisiones quincenales</li>
                      <li>Contacto 24/7 vía email</li>
                   </ul>
-                  <div class="main-button"><a href="mailto:tuemail@correo.com?
-                        subject=Nutrición%20trimestral">Adquirir plan</a></div>
+                  <div class="main-button"><a href="/cdn-cgi/l/email-protection#81f3eee7e8f5f6eef3eaeef4f5c1e6ece0e8edafe2eeec">Adquirir plan</a></div>
                </div>
             </div>
          </div>
       </div>
    </section>
-   <!-- ================= RETO FIT ================= -->
-   <section class="section reto-fit" id="reto-fit">
-      <div class="container">
-         <div class="row">
-            <div class="col-lg-6 offset-lg-3">
-               <div class="section-heading">
-                  <h2>Reto <em>Fit</em></h2>
-                  <img src="assets/images/line-dec.png" />
-                  8
-                  <p>21 días para bajar grasa con un plan completo de entrenamiento y
-                     alimentación.
-                  </p>
-               </div>
-            </div>
-         </div>
-         <div class="row align-items-center">
-            <div class="col-lg-6">
-               <img class="img-fluid reto-fit-image" src="assets/images/retofit.jpg" />
-            </div>
-            <div class="col-lg-6 reto-fit-content">
-               <h3>¿Qué incluye?</h3>
-               <ul>
-                  <li>Plan de alimentación</li>
-                  <li>Rutinas de ejercicio</li>
-                  <li>Coaching</li>
-                  <li>Chat privado</li>
-               </ul>
-               <div class="main-button"><a href="mailto:tuemail@correo.com?
-                     subject=Reto%20Fit">QUIERO EMPEZAR</a></div>
-            </div>
-         </div>
-      </div>
-   </section>
+
    <!-- ================= CONTACTO ================= -->
    <section class="section" id="contact-us">
       <div class="container">
@@ -338,71 +677,15 @@
             <div class="col-lg-6 offset-lg-3">
                <div class="section-heading">
                   <h2><em>Contacto</em></h2>
-                  <img src="assets/images/line-dec.png" />
-                  <p>Escríbeme y te responderé lo antes posible.</p>
+                  <img src="assets/images/line-dec.png" alt="waves">
+                  <p>¿Tienes alguna pregunta? Escríbeme y te responderé lo antes posible.</p>
                </div>
             </div>
          </div>
          <div class="row">
-            <div class="col-lg-8 offset-lg-2 col-md-12 col-sm-12">
-               <form id="contact" action="mailto:tuemail@correo.com" method="POST">
+            <div class="col-lg-8 offset-lg-2">
+               <form id="contact" action="" method="post">
                   <div class="row">
-                     <div class="col-md-6 col-sm-12">
-                        <fieldset>
-                           <input name="name" type="text" id="name" placeholder="Nombre" required />
-                        </fieldset>
-                        9
+                     <div class="col-lg-6 col-md-12">
+                        <input type="text" name="name" placeholder="Tu nombre*" required>
                      </div>
-                     <div class="col-md-6 col-sm-12">
-                        <fieldset>
-                           <input name="subject" type="text" id="subject" placeholder="Teléfono" />
-                        </fieldset>
-                     </div>
-                     <div class="col-md-12 col-sm-12">
-                        <fieldset>
-                           <input name="email" type="email" id="email" placeholder="Email" required />
-                        </fieldset>
-                     </div>
-                     <div class="col-md-12 col-sm-12">
-                        <fieldset>
-                           <textarea name="message" rows="6" id="message" placeholder="Comentario" required></textarea>
-                        </fieldset>
-                     </div>
-                     <div class="col-lg-12">
-                        <fieldset>
-                           <button type="submit" class="main-button">Enviar mensaje</ button>
-                        </fieldset>
-                     </div>
-                  </div>
-               </form>
-            </div>
-         </div>
-      </div>
-   </section>
-   <!-- ================= FOOTER ================= -->
-   <footer>
-      <div class="container">
-         <div class="row">
-            <div class="col-lg-12">
-               <p>© 2024 Rocío Tubío Personal Trainer.</p>
-            </div>
-         </div>
-      </div>
-   </footer>
-   <!-- JS -->
-   <script src="assets/js/jquery-2.1.0.min.js"></script>
-   <script src="assets/js/bootstrap.min.js"></script>
-   10
-   <script src="assets/js/popper.js"></script>
-   <script src="assets/js/scrollreveal.min.js"></script>
-   <script src="assets/js/waypoints.min.js"></script>
-   <script src="assets/js/jquery.counterup.min.js"></script>
-   <script src="assets/js/imgfix.min.js"></script>
-   <script src="assets/js/mixitup.js"></script>
-   <script src="assets/js/accordions.js"></script>
-   <script src="assets/js/language.js"></script>
-   <script src="assets/js/custom.js"></script>
-   <script src="assets/js/prices.js"></script>
-</body>
-
-</html>

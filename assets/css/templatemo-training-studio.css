@@ -29,22 +29,93 @@ font & reset css
 --------------------------------------------- 
 */
 @import url("https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i");
+
 /* 
 ---------------------------------------------
 reset
 --------------------------------------------- 
 */
-html, body, div,
-span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var, b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -52,25 +123,44 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
 	display: block;
 }
+
 body {
 	line-height: 1;
 }
-ol, ul {
+
+ol,
+ul {
 	list-style: none;
 }
-blockquote, q {
+
+blockquote,
+q {
 	quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
 	content: '';
 	content: none;
 }
+
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
@@ -84,28 +174,28 @@ global styles
 
 html,
 body {
-  font-family: 'Poppins', sans-serif;
+	font-family: 'Poppins', sans-serif;
 }
 
 ::selection {
-  background: #ec3c9a;
-  color: #fff;
+	background: #d63486;
+	color: #fff;
 }
 
 ::-moz-selection {
-  background: #ec3c9a;
-  color: #fff;
+	background: #d63486;
+	color: #fff;
 }
 
 a {
-	text-decoration: none!important;
+	text-decoration: none !important;
 }
 
 a.main-button-slider {
 	font-size: 13px;
 	border-radius: 22px;
 	padding: 12px 30px;
-	background-color: #ec3c9a;
+	background-color: #d63486;
 	text-transform: uppercase;
 	color: #fff;
 	letter-spacing: 0.25px;
@@ -114,14 +204,14 @@ a.main-button-slider {
 }
 
 a.main-button-slider:hover {
-	background-color: #f973b5;
+	background-color: #ec3c9a;
 }
 
 .main-button a {
 	font-size: 13px;
 	border-radius: 22px;
 	padding: 12px 30px;
-	background-color: #ec3c9a;
+	background-color: #d63486;
 	text-transform: uppercase;
 	color: #fff;
 	letter-spacing: 0.25px;
@@ -130,7 +220,7 @@ a.main-button-slider:hover {
 }
 
 .main-button a:hover {
-	background-color: #f973b5;
+	background-color: #ec3c9a;
 }
 
 .main-button {
@@ -149,7 +239,7 @@ a.main-button-slider:hover {
 
 .section-heading h2 em {
 	font-style: normal;
-	color: #ec3c9a;
+	color: #d63486;
 }
 
 .section-heading img {
@@ -163,30 +253,30 @@ header
 */
 
 .background-header {
-	background-color: #fff!important;
-	height: 80px!important;
-	position: fixed!important;
-	top: 0!important;
-	left: 0!important;
-	right: 0!important;
-	box-shadow: 0px 0px 10px rgba(0,0,0,0.15);
+	background-color: #fff !important;
+	height: 80px !important;
+	position: fixed !important;
+	top: 0 !important;
+	left: 0 !important;
+	right: 0 !important;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
 }
 
 .background-header .logo,
 .background-header .main-nav .nav li a {
-	color: #1e1e1e!important;
+	color: #1e1e1e !important;
 }
 
 .background-header .main-nav .nav li:last-child a {
-	color: #fff!important;
+	color: #fff !important;
 }
 
 .background-header .main-nav .nav li:nth-child(6) a {
-	color: #fff!important;
+	color: #fff !important;
 }
 
 .background-header .main-nav .nav li:nth-child(6) a:hover {
-	color: #fff!important;
+	color: #fff !important;
 }
 
 .background-header .main-nav .nav li.has-sub:after {
@@ -194,7 +284,7 @@ header
 }
 
 .background-header .main-nav .nav li.has-sub ul li a {
-	color: #7a7a7a!important;
+	color: #7a7a7a !important;
 }
 
 .header-area {
@@ -224,7 +314,7 @@ header
 
 .header-area .main-nav .logo em {
 	font-style: normal;
-	color: #ec3c9a;
+	color: #d63486;
 }
 
 .background-header .main-nav .logo {
@@ -232,7 +322,7 @@ header
 }
 
 .background-header .main-nav .logo em {
-	color: #ec3c9a;
+	color: #d63486;
 }
 
 .header-area .main-nav .nav {
@@ -265,7 +355,7 @@ header
 
 .header-area .main-nav .nav li a:hover,
 .header-area .main-nav .nav li a.active {
-	color: #ec3c9a!important;
+	color: #d63486 !important;
 }
 
 .background-header .main-nav .nav li a {
@@ -311,7 +401,7 @@ header
 .header-area .main-nav .nav li.submenu ul li a {
 	display: block;
 	background: #f7f7f7;
-	color: #7a7a7a!important;
+	color: #7a7a7a !important;
 	padding-left: 20px;
 	height: 40px;
 	line-height: 40px;
@@ -322,7 +412,7 @@ header
 
 .header-area .main-nav .nav li.submenu ul li a:hover {
 	background: #fff;
-	color: #ec3c9a!important;
+	color: #d63486 !important;
 	padding-left: 25px;
 }
 
@@ -466,7 +556,7 @@ call to action
 */
 
 .call-to-action {
-	background-color: #ec3c9a;
+	background-color: #d63486;
 	color: #fff;
 	padding: 60px 0;
 	text-align: center;
@@ -506,7 +596,7 @@ our classes
 
 #our-classes ul li a:hover,
 #our-classes ul li a.active {
-	background-color: #ec3c9a;
+	background-color: #d63486;
 	color: #fff;
 }
 
@@ -557,70 +647,141 @@ portfolio
 
 /* Color principal como variable */
 :root {
-  --primary-pink: #ec3c9a;
+	--primary-pink: #d63486;
 }
 
 /* ===== HERO ROSA CON IMAGEN (SUSTITUYE AL VIDEO) ===== */
 
 .main-banner-rosa {
-  background: linear-gradient(135deg, #ec3c9a 0%, #ff7fb7 50%, #ffffff 100%);
-  position: relative;
-  overflow: hidden;
+	background: linear-gradient(135deg, #ffb3d9 0%, #ffd4eb 50%, #ffffff 100%);
+	position: relative;
+	overflow: hidden;
 }
 
 .hero-overlay {
-  width: 100%;
-  height: 100%;
-  padding: 140px 0 120px 0;
+	width: 100%;
+	height: 100%;
+	padding: 100px 0 80px 0; /* Reducido el padding superior */
 }
 
-.hero-image img {
-  max-width: 100%;
-  border-radius: 25px;
-  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+.hero-image-left {
+	margin-top: 0;
+}
+
+.hero-image-left img {
+	max-width: 100%;
+	height: auto;
+	border-radius: 25px;
+	box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+}
+
+.hero-image-right {
+	position: relative;
+}
+
+.hero-image-right img {
+	max-width: 80%; /* Imagen más pequeña */
+	height: auto;
+	border-radius: 25px;
+	box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+	margin: 0 auto;
+	display: block;
+}
+
+.hero-phrase {
+	margin-top: 20px; /* Frase debajo de la imagen */
+	background: rgba(214, 52, 134, 0.9);
+	padding: 15px 30px;
+	border-radius: 15px;
+	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+	text-align: center;
+}
+
+.hero-phrase h3 {
+	color: #ffffff;
+	font-size: 24px;
+	font-weight: 700;
+	margin: 0;
+	text-transform: uppercase;
+	letter-spacing: 1px;
 }
 
 /* Ajuste texto del hero en pantallas pequeñas */
 @media (max-width: 991px) {
-  .hero-overlay {
-    padding: 120px 0 80px 0;
-  }
+	.hero-overlay {
+		padding: 100px 0 60px 0;
+	}
 
-  .hero-image {
-    margin-top: 30px;
-  }
+	.hero-image-left,
+	.hero-image-right {
+		margin-top: 30px;
+	}
+
+	.hero-image-right img {
+		max-width: 100%;
+	}
+
+	.hero-phrase h3 {
+		font-size: 20px;
+	}
 }
 
 /* ===== CABECERA: BARRA SUPERIOR CON CORREO + REDES ===== */
 
 .header-contact-info {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  font-size: 14px;
-  color: #ffffff;
-  padding: 6px 0;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	font-size: 14px;
+	color: #ffffff;
+	padding: 6px 0;
 }
 
 .header-email {
-  margin-right: 16px;
-  color: #ffffff;
+	margin-right: 16px;
+	color: #ffffff;
 }
 
 .header-email:hover {
-  color: #ffffff;
-  text-decoration: underline;
+	color: #ffffff;
+	text-decoration: underline;
 }
 
 .header-social a {
-  margin-left: 8px;
-  color: #ffffff;
-  transition: all 0.3s ease;
+	margin-left: 8px;
+	color: #ffffff;
+	transition: all 0.3s ease;
 }
 
 .header-social a:hover {
-  color: #ffffff;
-  opacity: 0.85;
+	color: #ffffff;
+	opacity: 0.85;
+}
+
+/* ===== LOGO IMAGEN EN EL MENÚ (DESPUÉS DE CONTACTO) ===== */
+
+.header-area .main-nav .nav li.logo-menu-item {
+	padding-left: 30px;
+	padding-right: 0px;
+	display: flex;
+	align-items: center;
+}
+
+.header-area .main-nav .nav li.logo-menu-item img {
+	height: 70px;
+	width: auto;
+	border-radius: 10px;
+	transition: all 0.3s ease;
+	vertical-align: middle;
+}
+
+.header-area .main-nav .nav li.logo-menu-item img:hover {
+	transform: scale(1.05);
+	box-shadow: 0 5px 15px rgba(214, 52, 134, 0.3);
+}
+
+.background-header .main-nav .nav li.logo-menu-item img {
+	height: 60px;
 }
 
 /* ===== QUIÉN SOY / NUTRICIÓN / RETO FIT – TARJETAS ===== */
@@ -628,116 +789,223 @@ portfolio
 .about-wrapper,
 .nutrition-card,
 .reto-fit-content {
-  background: #ffffff;
-  border-radius: 25px;
-  padding: 30px;
-  box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.08);
+	background: #ffffff;
+	border-radius: 25px;
+	padding: 30px;
+	box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.08);
 }
 
 .about-wrapper img {
-  border-radius: 25px;
+	border-radius: 25px;
 }
 
 /* ===== TARJETAS DE NUTRICIÓN ===== */
 
 .nutrition-cards {
-  margin-top: 30px;
+	margin-top: 30px;
 }
 
 .nutrition-card h3 {
-  font-size: 22px;
-  font-weight: 700;
-  margin-bottom: 10px;
+	font-size: 22px;
+	font-weight: 700;
+	margin-bottom: 10px;
 }
 
 .nutrition-price {
-  font-size: 28px;
-  font-weight: 800;
-  color: var(--primary-pink);
-  margin-bottom: 20px;
+	font-size: 28px;
+	font-weight: 800;
+	color: var(--primary-pink);
+	margin-bottom: 20px;
 }
 
 .nutrition-card ul {
-  padding-left: 18px;
-  margin-bottom: 25px;
+	padding-left: 18px;
+	margin-bottom: 25px;
 }
 
 .nutrition-card ul li {
-  font-size: 14px;
-  line-height: 24px;
+	font-size: 14px;
+	line-height: 24px;
 }
 
 /* ===== RETO FIT ===== */
 
 .reto-fit-image {
-  border-radius: 25px;
-  box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.12);
+	border-radius: 25px;
+	box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.12);
 }
 
 .reto-fit-content h3 {
-  font-size: 22px;
-  font-weight: 700;
-  margin-bottom: 10px;
+	font-size: 22px;
+	font-weight: 700;
+	margin-bottom: 10px;
 }
 
 .reto-fit-content ul {
-  padding-left: 18px;
-  margin-top: 15px;
+	padding-left: 18px;
+	margin-top: 15px;
 }
 
 .reto-fit-content ul li {
-  font-size: 14px;
-  line-height: 24px;
+	font-size: 14px;
+	line-height: 24px;
 }
 
 /* ===== BOTONES OUTLINE PARA SERVICIOS ===== */
 
 .main-button-outline a {
-  background-color: transparent;
-  border: 2px solid var(--primary-pink);
-  color: var(--primary-pink);
-  border-radius: 4px;
-  padding: 10px 18px;
-  font-size: 13px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  font-weight: 600;
-  transition: all 0.3s ease;
+	background-color: transparent;
+	border: 2px solid var(--primary-pink);
+	color: var(--primary-pink);
+	border-radius: 4px;
+	padding: 10px 18px;
+	font-size: 13px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 600;
+	transition: all 0.3s ease;
 }
 
 .main-button-outline a:hover {
-  background-color: var(--primary-pink);
-  color: #ffffff;
+	background-color: var(--primary-pink);
+	color: #ffffff;
 }
 
 /* ===== PEQUEÑOS AJUSTES DE ESPACIADO ===== */
 
 .about-wrapper {
-  margin-bottom: 40px;
+	margin-bottom: 40px;
 }
 
 .nutrition-card {
-  margin-bottom: 40px;
+	margin-bottom: 40px;
 }
 
 .reto-fit {
-  padding-top: 60px;
+	padding-top: 60px;
 }
 
 .reto-fit-content .main-button {
-  margin-top: 15px;
+	margin-top: 15px;
+}
+
+/* ===== MENÚ DESPLEGABLE DE SERVICIOS ===== */
+
+.header-area .main-nav .nav li.submenu.servicios-menu ul {
+	width: 320px;
+	max-height: 400px;
+	overflow-y: auto;
+}
+
+.header-area .main-nav .nav li.submenu.servicios-menu ul li a {
+	white-space: normal;
+	line-height: 1.4;
+	padding: 12px 20px;
+	height: auto;
+	min-height: 45px;
+}
+
+.header-area .main-nav .nav li.submenu.servicios-menu ul li a:hover {
+	padding-left: 25px;
+}
+
+/* Scroll personalizado para el menú de servicios */
+.header-area .main-nav .nav li.submenu.servicios-menu ul::-webkit-scrollbar {
+	width: 6px;
+}
+
+.header-area .main-nav .nav li.submenu.servicios-menu ul::-webkit-scrollbar-track {
+	background: #f1f1f1;
+}
+
+.header-area .main-nav .nav li.submenu.servicios-menu ul::-webkit-scrollbar-thumb {
+	background: #d63486;
+	border-radius: 3px;
+}
+
+.header-area .main-nav .nav li.submenu.servicios-menu ul::-webkit-scrollbar-thumb:hover {
+	background: #b82970;
 }
 
 /* ===== RESPONSIVE EXTRA PARA MÓVILES ===== */
 
 @media (max-width: 991px) {
-  .about-wrapper,
-  .nutrition-card,
-  .reto-fit-content {
-    margin-bottom: 30px;
-  }
 
-  .header-contact-info {
-    justify-content: center;
-  }
+	.about-wrapper,
+	.nutrition-card,
+	.reto-fit-content {
+		margin-bottom: 30px;
+	}
+
+	.header-contact-info {
+		justify-content: center;
+	}
+
+	.header-area .main-nav .nav li.logo-menu-item {
+		display: none;
+	}
+
+	.header-area .main-nav .nav li.submenu.servicios-menu ul {
+		width: 100%;
+		max-height: 300px;
+	}
+}
+
+/* ===== SECCIONES DE SERVICIOS INDIVIDUALES ===== */
+
+.service-section {
+	padding: 80px 0;
+}
+
+.service-section:nth-child(even) {
+	background-color: #f7f7f7;
+}
+
+.service-section h3 {
+	font-size: 28px;
+	font-weight: 700;
+	margin-bottom: 20px;
+	color: #1e1e1e;
+}
+
+.service-section p {
+	font-size: 15px;
+	line-height: 28px;
+	color: #4a4a4a;
+	margin-bottom: 25px;
+}
+
+.service-benefits {
+	list-style: none;
+	padding-left: 0;
+	margin-bottom: 30px;
+}
+
+.service-benefits li {
+	font-size: 15px;
+	line-height: 32px;
+	color: #4a4a4a;
+	padding-left: 0;
+}
+
+.service-benefits li:before {
+	content: "";
+	margin-right: 10px;
+}
+
+.service-img {
+	border-radius: 25px;
+	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+	width: 100%;
+	height: auto;
+}
+
+@media (max-width: 991px) {
+	.service-section .col-lg-6:last-child {
+		margin-top: 30px;
+	}
+
+	.service-section h3 {
+		font-size: 24px;
+	}
 }
